@@ -1,0 +1,122 @@
+.wrapper {
+  padding: 18px;
+}
+
+h2 {
+  margin: 30px;
+  text-align: center;
+}
+
+.photo_block {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.photo {
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  object-fit: contain;
+  border-radius: var(--border-radius);
+}
+
+.info_block {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.list {
+  margin: 30px;
+  list-style-type: disclosure-closed;
+}
+.technic {
+  border: var(--border);
+  box-shadow: var(--shadow-card-info);
+  border-radius: var(--border-radius);
+}
+
+.description {
+  max-width: 500px;
+  min-width: 200px;
+  width: 100%;
+  border: var(--border);
+  box-shadow: var(--shadow-card-info);
+  border-radius: var(--border-radius);
+}
+
+.specifications {
+  margin-top: 16px;
+}
+
+.plans_block {
+  margin-bottom: 30px;
+}
+
+.plans {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.photo_plan {
+  max-width: 250px;
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+
+.review_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.review {
+  padding: 10px;
+}
+
+.review_description {
+  max-width: 900px;
+  min-width: 300px;
+  width: 100%;
+  border: var(--border);
+  box-shadow: var(--shadow-card-info);
+  border-radius: var(--border-radius);
+}
+
+.write_review {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 30px;
+}
+
+.review_feild {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.review_feild:focus {
+  outline: 2px solid rgba(0, 65, 223, 1);
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+}

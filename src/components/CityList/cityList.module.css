@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+}
+
+.list {
+  list-style-type: none;
+  height: 300px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  align-items: center;
+  text-align: center;
+  background: var(--background-gradient-header);
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.city {
+  font-size: 14px;
+  padding: 5px;
+  cursor: pointer;
+  color: black !important;
+}

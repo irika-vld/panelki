@@ -1,6 +1,8 @@
 .first_block {
   display: flex;
-  position: relative;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .img {
@@ -24,6 +26,10 @@
 .title {
   font-size: 3.5rem;
   color: white;
+}
+
+.content {
+  margin-top: 500px;
 }
 
 .card_block {

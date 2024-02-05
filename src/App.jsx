@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/header";
-import Home from "./components/Home/home";
-import BuildingInfo from "./components/BuildingInfo/buildingInfo";
-import CityInfo from "./components/CityInfo/cityInfo";
+import Home from "./components/pages/Home/home";
+import BuildingInfo from "./components/pages/BuildingInfo/buildingInfo";
+import CityInfo from "./components/pages/CityInfo/cityInfo";
 
 function App() {
   
@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/info/:title/:id" element={<BuildingInfo />} />
-          <Route path="/city" element={<CityInfo />} />
+          <Route path="/city/:id" element={<CityInfo />} />
         </Routes>
       </div>
     </BrowserRouter>

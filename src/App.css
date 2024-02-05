@@ -3,6 +3,7 @@
   --background-gradient-header: linear-gradient(180deg, rgba(0,65,223,1) 0%, rgba(231,245,255,1) 63%, rgba(255,255,255,1) 100%);
   --border: 2px solid rgb(229, 232, 240);
   --shadow-card-info: 5px 3px 5px rgb(51, 51, 51);
+  --border-radius: 5px;
   
 }
 

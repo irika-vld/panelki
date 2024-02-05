@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ title, img, id }) => {
 
-  const mainPhoto = img.map((el) => el)[0]
+  const mainPhoto = img.filter((el) => el.tag === "main").map((el) => el.img)[0];
 
   return (
     <Link to={`/info/${title}/${id}`} style={{ textDecoration: "none" }}>

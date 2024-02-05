@@ -11,17 +11,42 @@ export const panelki = [
       "Волгодонск",
     ],
     images: [
-      "https://sun9-80.userapi.com/impg/xZvR8YMzF2zVsph4UeskAJ6AfM4XMKR35LcX2g/eGTHm6bidxk.jpg?size=2560x1920&quality=95&sign=297f63ec83fa3621508668befad7ec67&type=album",
-      "https://cdn-p.cian.site/images/kvartira-tolyatti-revolyucionnaya-ulica-2058757385-1.jpg",
-      "https://sun6-23.userapi.com/s/v1/if1/9XKckGH9N0WOHHEK5kkYwWSMxz904gQfzdZqzjiWR87yw3OLkIoXvmKiE7pcvF-aWzjdLaW4.jpg?size=1199x1199&quality=96&crop=300,0,1199,1199&ava=1",
-    ],
-    plans: [
-      "https://tipdoma.com/wp-content/uploads/2010/03/II-60-p.jpg",
-      "https://sun9-48.userapi.com/impf/c633118/v633118652/1629b/Jxo1HAxGavg.jpg?size=897x778&quality=96&sign=985649b4d7305291be01e000818fc716&type=album",
-      "https://molodcov.ru/sites/default/files/pictures/others/1_1.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/2_0.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/3k_malometrajnaia.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/3k_2.jpg",
+      {
+        img: "https://sun9-80.userapi.com/impg/xZvR8YMzF2zVsph4UeskAJ6AfM4XMKR35LcX2g/eGTHm6bidxk.jpg?size=2560x1920&quality=95&sign=297f63ec83fa3621508668befad7ec67&type=album",
+        tag: "main",
+      },
+      {
+        img: "https://cdn-p.cian.site/images/kvartira-tolyatti-revolyucionnaya-ulica-2058757385-1.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://sun6-23.userapi.com/s/v1/if1/9XKckGH9N0WOHHEK5kkYwWSMxz904gQfzdZqzjiWR87yw3OLkIoXvmKiE7pcvF-aWzjdLaW4.jpg?size=1199x1199&quality=96&crop=300,0,1199,1199&ava=1",
+        tag: "main",
+      },
+      {
+        img: "https://tipdoma.com/wp-content/uploads/2010/03/II-60-p.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://sun9-48.userapi.com/impf/c633118/v633118652/1629b/Jxo1HAxGavg.jpg?size=897x778&quality=96&sign=985649b4d7305291be01e000818fc716&type=album",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/1_1.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/2_0.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/3k_malometrajnaia.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/3k_2.jpg",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Lorem ipsum: cursus",
@@ -50,18 +75,46 @@ export const panelki = [
       "Курган",
     ],
     images: [
-      "https://www.zdanija.ru/plugins/p17_image_gallery/images/md/17/5060.jpg",
-      "https://vsedomarossii.ru/photos/area_63/city_2474/street_1730/1211_11.jpg",
-      "https://avatars.dzeninfra.ru/get-zen_doc/1885164/pub_5f66067d725dfb4524a6d83d_5f6612b2c833846a1d735062/scale_1200",
-    ],
-    plans: [
-      "https://www.zdanija.ru/plugins/p17_image_gallery/images/md/17/5061.jpg",
-      "https://www.zdanija.ru/plugins/p17_image_gallery/images/17/5062.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/1.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/2_malometrajnaj.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/2.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/3.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/4_trapecia.jpg",
+      {
+        img: "https://www.zdanija.ru/plugins/p17_image_gallery/images/md/17/5060.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://vsedomarossii.ru/photos/area_63/city_2474/street_1730/1211_11.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://avatars.dzeninfra.ru/get-zen_doc/1885164/pub_5f66067d725dfb4524a6d83d_5f6612b2c833846a1d735062/scale_1200",
+        tag: "main",
+      },
+      {
+        img: "https://www.zdanija.ru/plugins/p17_image_gallery/images/md/17/5061.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zdanija.ru/plugins/p17_image_gallery/images/17/5062.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/1.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/2_malometrajnaj.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/2.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/3.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/4_trapecia.jpg",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Lorem ipsum: cursus",
@@ -82,13 +135,26 @@ export const panelki = [
     name: "111-125",
     cities: ["Тюмень", "Владивосток", "Ухта", "Казань", "Пенза", "Йошкар-Ола"],
     images: [
-      "https://sun9-24.userapi.com/impg/c857616/v857616302/fcd01/1bbJSp01VX0.jpg?size=739x494&quality=96&sign=61f35538b1785fe2e82fe164105a3d01&type=album",
-      "https://www.zdanija.ru/forum/uploads/monthly_11_2013/post-30-1385808816.jpeg",
-      "https://tipdoma.com/wp-content/uploads/2010/02/1251.jpg",
-    ],
-    plans: [
-      "https://www.zdanija.ru/forum/uploads/monthly_12_2012/post-29540-1354384327.jpg",
-      "https://www.zdanija.ru/forum/uploads/monthly_12_2012/post-29540-1354384316.jpg",
+      {
+        img: "https://sun9-24.userapi.com/impg/c857616/v857616302/fcd01/1bbJSp01VX0.jpg?size=739x494&quality=96&sign=61f35538b1785fe2e82fe164105a3d01&type=album",
+        tag: "main",
+      },
+      {
+        img: "https://www.zdanija.ru/forum/uploads/monthly_11_2013/post-30-1385808816.jpeg",
+        tag: "main",
+      },
+      {
+        img: "https://tipdoma.com/wp-content/uploads/2010/02/1251.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://www.zdanija.ru/forum/uploads/monthly_12_2012/post-29540-1354384327.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zdanija.ru/forum/uploads/monthly_12_2012/post-29540-1354384316.jpg",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Lorem ipsum: cursus",
@@ -116,18 +182,42 @@ export const panelki = [
       "Владимир",
     ],
     images: [
-      "https://img.dmclk.ru/eva_house/83/02/83029a90f6f44d359b6e5ba0c64b31e10c0fc992.webp",
-      "https://img.dmclk.ru/eva_house/e8/40/e840aef68f144442bdf91aa1a8cadf73057c14d8.webp",
-      "http://selfietecture.com/wp-content/uploads/2015/07/IMG_7381.jpg",
-    ],
-    plans: [
-      "https://www.pereplanirovkamos.ru/sites/default/files/poehtazhnyj-plan-ii-49-001.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/1_bez_balkonf_v_9_etaj_dome.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/1_0.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/2_bez_bakrona_v_9_etajmom_dome.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/3_komnatnaj_bez_balkona_v_9_etajnom_dome_prohonaj.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/3_v_9_etajmom_dome_matreshka.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/3k_9etajni_dom.jpg",
+      {
+        img: "https://img.dmclk.ru/eva_house/83/02/83029a90f6f44d359b6e5ba0c64b31e10c0fc992.webp",
+        tag: "main",
+      },
+      {
+        img: "https://img.dmclk.ru/eva_house/e8/40/e840aef68f144442bdf91aa1a8cadf73057c14d8.webp",
+        tag: "main",
+      },
+      {
+        img: "http://selfietecture.com/wp-content/uploads/2015/07/IMG_7381.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://www.pereplanirovkamos.ru/sites/default/files/poehtazhnyj-plan-ii-49-001.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/1_bez_balkonf_v_9_etaj_dome.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/2_bez_bakrona_v_9_etajmom_dome.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/3_komnatnaj_bez_balkona_v_9_etajnom_dome_prohonaj.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/3_v_9_etajmom_dome_matreshka.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/3k_9etajni_dom.jpg",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Тип дома: панельный",
@@ -148,18 +238,46 @@ export const panelki = [
     name: "П-44",
     cities: ["Москва", "Армавир", "Владимир", "Люберцы", "Красноярск", "Тверь"],
     images: [
-      "https://zelgorod.ru/uploads/all/84/3e/b3/843eb3537b10376cd2415483e1d53e31.jpg",
-      "https://tokio1.ru/img/389144.jpg",
-      "http://7729005.ru/Proekt/0622/foto_500/01__k622__2011-10-22_2.jpg",
-    ],
-    plans: [
-      "https://www.zjs.ru/upload/iblock/d77/d777410774286bd8ed684b0eba116472.jpg",
-      "https://www.zjs.ru/upload/iblock/09f/09f43ad743f7d1d01e4b45924748416d.jpg",
-      "https://www.zjs.ru/upload/iblock/634/634b622675834fbce40196a3b264f3f7.jpg",
-      "https://www.zjs.ru/upload/iblock/6b9/6b9728df8b078a6fc31cfb4bdae548e6.png",
-      "https://www.zjs.ru/upload/iblock/2a4/2a4f7035e9d2152ef84b144b8e26ca8e.png",
-      "https://www.zjs.ru/upload/iblock/732/732a83b8804adc9fdc8fa4f91cf9be1b.png",
-      "https://www.zjs.ru/upload/iblock/50d/50df3cccc8fb156741841a644bf35026.png",
+      {
+        img: "https://zelgorod.ru/uploads/all/84/3e/b3/843eb3537b10376cd2415483e1d53e31.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://tokio1.ru/img/389144.jpg",
+        tag: "main",
+      },
+      {
+        img: "http://7729005.ru/Proekt/0622/foto_500/01__k622__2011-10-22_2.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/d77/d777410774286bd8ed684b0eba116472.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/09f/09f43ad743f7d1d01e4b45924748416d.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/634/634b622675834fbce40196a3b264f3f7.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/6b9/6b9728df8b078a6fc31cfb4bdae548e6.png",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/2a4/2a4f7035e9d2152ef84b144b8e26ca8e.png",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/732/732a83b8804adc9fdc8fa4f91cf9be1b.png",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/50d/50df3cccc8fb156741841a644bf35026.png",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Тип дома: панельный",
@@ -180,15 +298,34 @@ export const panelki = [
     name: "II-68",
     cities: ["Москва", "Тольятти", "Десногорск"],
     images: [
-      "https://flatinfo.ru/articles/img/2-68-162.png",
-      "https://ic.pics.livejournal.com/nefer/1300302/1959762/1959762_original.jpg",
-      "https://photos.wikimapia.org/p/00/01/25/31/14_big.jpg",
-    ],
-    plans: [
-      "https://www.pereplanirovkamos.ru/sites/default/files/ii-68-poehtazhnyj-plan-003a.jpg.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/1k_16etajni_dom.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/2k.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/3k_0.jpg",
+      {
+        img: "https://flatinfo.ru/articles/img/2-68-162.png",
+        tag: "main",
+      },
+      {
+        img: "https://ic.pics.livejournal.com/nefer/1300302/1959762/1959762_original.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://photos.wikimapia.org/p/00/01/25/31/14_big.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://www.pereplanirovkamos.ru/sites/default/files/ii-68-poehtazhnyj-plan-003a.jpg.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/1k_16etajni_dom.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/2k.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/3k_0.jpg",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Lorem ipsum: cursus",
@@ -209,13 +346,26 @@ export const panelki = [
     name: "II-18",
     cities: ["Москва", "Троицк", "Казань", "Бугульма", "Пермь", "Магнитогорск"],
     images: [
-      "https://avatars.dzeninfra.ru/get-zen_doc/9712324/pub_64366d8491eb4f2070909fb2_6437a035766d56620f1e0543/scale_1200",
-      "https://avatars.dzeninfra.ru/get-zen_doc/1852544/pub_64ef4faa09bb0574c6d245c4_64ef50cbbe84d973e46d0e81/scale_1200",
-      "https://photos.wikimapia.org/p/00/03/75/09/94_full.jpg",
-    ],
-    plans: [
-      "https://www.zjs.ru/upload/iblock/b61/b617778b55c0a585cc3e1e4e46ee36f9.jpg",
-      "https://gsps.ru/wp-content/uploads/2022/05/bti-ii-18-012.jpg",
+      {
+        img: "https://avatars.dzeninfra.ru/get-zen_doc/9712324/pub_64366d8491eb4f2070909fb2_6437a035766d56620f1e0543/scale_1200",
+        tag: "main",
+      },
+      {
+        img: "https://avatars.dzeninfra.ru/get-zen_doc/1852544/pub_64ef4faa09bb0574c6d245c4_64ef50cbbe84d973e46d0e81/scale_1200",
+        tag: "main",
+      },
+      {
+        img: "https://photos.wikimapia.org/p/00/03/75/09/94_full.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/b61/b617778b55c0a585cc3e1e4e46ee36f9.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://gsps.ru/wp-content/uploads/2022/05/bti-ii-18-012.jpg",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Тип дома: блочный",
@@ -238,18 +388,46 @@ export const panelki = [
     name: "II-30",
     cities: ["Москва", "Набережные Челны", "Тольятти", "Вязьма"],
     images: [
-      "https://9-img.onrealt.ru/files/05-2023/05/9a/70/moskva-kypit-kvartiru-vtorichnoe-zhilje-ulitca-leskova-6-73291090.jpg",
-      "https://pereplan-one.ru/assets/lib/2019/01/29/seriya-p30-07_0.jpg",
-      "https://www.zjs.ru/upload/iblock/007/00774262f894eac2947ea73804137d18.jpg",
-    ],
-    plans: [
-      "https://www.zjs.ru/upload/iblock/fe6/fe6641ea35dc6da592c9e32ddabedab0.jpg",
-      "https://www.zjs.ru/upload/iblock/bf5/bf5f9a8f1e8b05ffe9a3407ca5e0a28d.jpg",
-      "https://www.zjs.ru/upload/iblock/e35/e356f204f1967b16ce43df95dbcaba38.jpg",
-      "https://www.zjs.ru/upload/iblock/690/6904c90aefd548d5299795dad3a194a0.jpg",
-      "https://www.zjs.ru/upload/iblock/c49/c49aa55e6a000c47cb36d1f8cd18c4da.jpg",
-      "https://www.zjs.ru/upload/iblock/69a/69ad4a80d46dcae5797891fb4ed0ebdb.jpg",
-      "https://www.zjs.ru/upload/iblock/048/048908d2a6a2f7143ed842a6f2235cb4.jpg",
+      {
+        img: "https://9-img.onrealt.ru/files/05-2023/05/9a/70/moskva-kypit-kvartiru-vtorichnoe-zhilje-ulitca-leskova-6-73291090.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://pereplan-one.ru/assets/lib/2019/01/29/seriya-p30-07_0.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/007/00774262f894eac2947ea73804137d18.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/fe6/fe6641ea35dc6da592c9e32ddabedab0.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/bf5/bf5f9a8f1e8b05ffe9a3407ca5e0a28d.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/e35/e356f204f1967b16ce43df95dbcaba38.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/690/6904c90aefd548d5299795dad3a194a0.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/c49/c49aa55e6a000c47cb36d1f8cd18c4da.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/69a/69ad4a80d46dcae5797891fb4ed0ebdb.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/048/048908d2a6a2f7143ed842a6f2235cb4.jpg",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Тип дома: панельный",
@@ -279,13 +457,26 @@ export const panelki = [
       "Новосибирск",
     ],
     images: [
-      "https://img.dmclk.ru/vitrina/08/ea/08ea0eb9452b823ae6cb5d6e5930d194cbcedc21.webp",
-      "https://sun1-91.userapi.com/impf/gaOiGXBuJ7r4hRbBRyc-KunD-RWzinUa6h_9pQ/nInSJrCGwXA.jpg?size=1280x960&quality=96&sign=4abb3f4e887d8d8a1c5a084d46f2075b&type=album",
-      "https://sun9-1.userapi.com/impf/a5CEo0OjxAT8QEWFCi84z5UWdSiE8g3Y_JMUJw/ZIfwEEp2VBo.jpg?size=768x1024&quality=96&sign=7175c5dfd33dd0b5db003e9a3a5d27cf&type=album",
-    ],
-    plans: [
-      "https://prawdom.ru/progjekt_docs/e-93-plan1.jpg",
-      "https://www.zdanija.ru/forum/uploads/monthly_11_2016/post-32531-0.77795900-1478452984.jpg",
+      {
+        img: "https://img.dmclk.ru/vitrina/08/ea/08ea0eb9452b823ae6cb5d6e5930d194cbcedc21.webp",
+        tag: "main",
+      },
+      {
+        img: "https://sun1-91.userapi.com/impf/gaOiGXBuJ7r4hRbBRyc-KunD-RWzinUa6h_9pQ/nInSJrCGwXA.jpg?size=1280x960&quality=96&sign=4abb3f4e887d8d8a1c5a084d46f2075b&type=album",
+        tag: "main",
+      },
+      {
+        img: "https://sun9-1.userapi.com/impf/a5CEo0OjxAT8QEWFCi84z5UWdSiE8g3Y_JMUJw/ZIfwEEp2VBo.jpg?size=768x1024&quality=96&sign=7175c5dfd33dd0b5db003e9a3a5d27cf&type=album",
+        tag: "main",
+      },
+      {
+        img: "https://prawdom.ru/progjekt_docs/e-93-plan1.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zdanija.ru/forum/uploads/monthly_11_2016/post-32531-0.77795900-1478452984.jpg",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Lorem ipsum: cursus",
@@ -314,20 +505,54 @@ export const panelki = [
       "Тюмень",
     ],
     images: [
-      "https://skedraft.ru/wp-content/uploads/2018/09/dom-serii-1-464_2.jpg",
-      "https://img.dmclk.ru/q80/eva_house/1e/2b/1e2b19f0a81f4cd1819451893792e1969f8136e8.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/%D0%93%D0%B0%D1%82%D1%87%D0%B8%D0%BD%D0%B0._%D0%A3%D0%BB%D0%B8%D1%86%D0%B0_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C_28.jpg/411px-%D0%93%D0%B0%D1%82%D1%87%D0%B8%D0%BD%D0%B0._%D0%A3%D0%BB%D0%B8%D1%86%D0%B0_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C_28.jpg",
-    ],
-    plans: [
-      "https://tipdoma.com/wp-content/uploads/2010/02/1-464-p.jpg",
-      "https://tipdoma.com/wp-content/uploads/2010/02/1-464-p2.jpg",
-      "https://tipdoma.com/wp-content/uploads/2010/02/1-464-p3.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/2_k_tramvai.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/2_samolet.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/3_kom_trapecia.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/3_v_5_etajnom_dome_prohodnaj.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/3k_5_etajn_dom.jpg",
-      "https://molodcov.ru/sites/default/files/pictures/others/4_kom_v_5_enajnom_dome.jpg",
+      {
+        img: "https://skedraft.ru/wp-content/uploads/2018/09/dom-serii-1-464_2.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://img.dmclk.ru/q80/eva_house/1e/2b/1e2b19f0a81f4cd1819451893792e1969f8136e8.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/%D0%93%D0%B0%D1%82%D1%87%D0%B8%D0%BD%D0%B0._%D0%A3%D0%BB%D0%B8%D1%86%D0%B0_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C_28.jpg/411px-%D0%93%D0%B0%D1%82%D1%87%D0%B8%D0%BD%D0%B0._%D0%A3%D0%BB%D0%B8%D1%86%D0%B0_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C_28.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://tipdoma.com/wp-content/uploads/2010/02/1-464-p.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://tipdoma.com/wp-content/uploads/2010/02/1-464-p2.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://tipdoma.com/wp-content/uploads/2010/02/1-464-p3.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/2_k_tramvai.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/2_samolet.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/3_kom_trapecia.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/3_v_5_etajnom_dome_prohodnaj.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/3k_5_etajn_dom.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://molodcov.ru/sites/default/files/pictures/others/4_kom_v_5_enajnom_dome.jpg",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Lorem ipsum: cursus",
@@ -348,19 +573,50 @@ export const panelki = [
     name: "1-515",
     cities: ["Владивосток", "Владимир", "Тольятти", "Уфа", "Казань", "Брянск"],
     images: [
-      "https://flatinfo.ru/uploads/house_source/23629_2.jpg",
-      "https://img.dmclk.ru/s1200x800q80/eva_house/4e/89/4e89873677964c2d804d9a80badd5f4a45dcf725.jpg",
-      "https://zelgorod.ru/uploads/all/7f/23/42/7f234238fa751a80630261b04098e94c.jpg",
-    ],
-    plans: [
-      "https://www.zjs.ru/upload/iblock/ef8/ef87bdb7e92c0b4977519b18affc76ff.jpg",
-      "https://www.zjs.ru/upload/iblock/fd5/fd5fa63cb4822124f4bc6327f57029ed.png",
-      "https://www.zjs.ru/upload/iblock/088/08852c3297852d82a87aa30dc1360458.png",
-      "https://www.zjs.ru/upload/iblock/e1e/e1e7880c813e87ca20e5d88f0a31b8d5.png",
-      "https://www.zjs.ru/upload/iblock/9e4/9e4c4ad54f012e46b83a78e30634bf7d.png",
-      "https://www.zjs.ru/upload/iblock/14c/14c8c485d67727a3287b65fcce732ae1.png",
-      "https://www.zjs.ru/upload/iblock/ef8/ef8417856eaece1ab8ac16455683e32f.png",
-      "https://www.zjs.ru/upload/iblock/e6a/e6af12e73f1cd839ffae84df267329cd.png",
+      {
+        img: "https://flatinfo.ru/uploads/house_source/23629_2.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://img.dmclk.ru/s1200x800q80/eva_house/4e/89/4e89873677964c2d804d9a80badd5f4a45dcf725.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://zelgorod.ru/uploads/all/7f/23/42/7f234238fa751a80630261b04098e94c.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/ef8/ef87bdb7e92c0b4977519b18affc76ff.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/fd5/fd5fa63cb4822124f4bc6327f57029ed.png",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/088/08852c3297852d82a87aa30dc1360458.png",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/e1e/e1e7880c813e87ca20e5d88f0a31b8d5.png",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/9e4/9e4c4ad54f012e46b83a78e30634bf7d.png",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/14c/14c8c485d67727a3287b65fcce732ae1.png",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/ef8/ef8417856eaece1ab8ac16455683e32f.png",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/e6a/e6af12e73f1cd839ffae84df267329cd.png",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Lorem ipsum: cursus",
@@ -391,14 +647,30 @@ export const panelki = [
       "Брянск",
     ],
     images: [
-      "https://alpinistspb.ru/wp-content/uploads/2020/07/kak-opredelit-seriju-doma.jpg",
-      "https://pro-dachnikov.com/uploads/posts/2021-10/1633803116_101-p-dom-brezhnevka-foto-110.jpg",
-      "https://www.zjs.ru/upload/iblock/bda/bda17e91caa5ee7bf07ff33cc8f660c2.jpg",
-    ],
-    plans: [
-      "https://zelgorod.ru/uploads/all/83/a0/a6/83a0a65c66387e74703a788acfcd3f24.jpg",
-      "https://zelgorod.ru/uploads/all/94/e8/bc/94e8bc229b1306a129a9da572a386cf6.jpg",
-      "https://zelgorod.ru/uploads/all/c5/4f/b1/c54fb15d031e7c9d3bfd27cb71121cdf.jpg",
+      {
+        img: "https://alpinistspb.ru/wp-content/uploads/2020/07/kak-opredelit-seriju-doma.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://pro-dachnikov.com/uploads/posts/2021-10/1633803116_101-p-dom-brezhnevka-foto-110.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/bda/bda17e91caa5ee7bf07ff33cc8f660c2.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://zelgorod.ru/uploads/all/83/a0/a6/83a0a65c66387e74703a788acfcd3f24.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://zelgorod.ru/uploads/all/94/e8/bc/94e8bc229b1306a129a9da572a386cf6.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://zelgorod.ru/uploads/all/c5/4f/b1/c54fb15d031e7c9d3bfd27cb71121cdf.jpg",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Lorem ipsum: cursus",
@@ -426,13 +698,26 @@ export const panelki = [
       "Пермь",
     ],
     images: [
-      "https://zelgorod.ru/uploads/all/dc/1b/c3/dc1bc3d0a4ec48e090a1102566f491c6.jpg",
-      "https://www.zjs.ru/upload/iblock/abc/abc57a69bc73afe96b6a029d42a6c21a.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/31/%D0%9C%D0%B8%D1%80%D0%B0_31.jpg",
-    ],
-    plans: [
-      "https://www.zjs.ru/upload/resize_cache/iblock/986/1200_1200_0/9861a222faec293c90143ee8065c2525.jpg",
-      "https://www.zjs.ru/upload/iblock/755/755196b33ee626cde6a893a5a9ab75e1.jpg",
+      {
+        img: "https://zelgorod.ru/uploads/all/dc/1b/c3/dc1bc3d0a4ec48e090a1102566f491c6.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/abc/abc57a69bc73afe96b6a029d42a6c21a.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://upload.wikimedia.org/wikipedia/commons/3/31/%D0%9C%D0%B8%D1%80%D0%B0_31.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://www.zjs.ru/upload/resize_cache/iblock/986/1200_1200_0/9861a222faec293c90143ee8065c2525.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zjs.ru/upload/iblock/755/755196b33ee626cde6a893a5a9ab75e1.jpg",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Lorem ipsum: cursus",
@@ -453,13 +738,26 @@ export const panelki = [
     name: "114-86",
     cities: ["Казань", "Волгоград", "Тюмень", "Омск", "Ухта", "Димитровград"],
     images: [
-      "https://prawdom.ru/progjekt_docs/1-86_vid1.jpg",
-      "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_653da1561154920ba2dbc9fc_653da22015feae0ef4531905/scale_1200",
-      "https://upload.wikimedia.org/wikipedia/commons/2/26/Apartment_building_%284147539096%29.jpg",
-    ],
-    plans: [
-      "https://www.kvmeter.ru/upload/iblock/81e/81e07d2380554ed0c006ca0a040519b3.jpg",
-      "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_653da1561154920ba2dbc9fc_653da1e5d778ff6cb2b748c9/scale_1200",
+      {
+        img: "https://prawdom.ru/progjekt_docs/1-86_vid1.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_653da1561154920ba2dbc9fc_653da22015feae0ef4531905/scale_1200",
+        tag: "main",
+      },
+      {
+        img: "https://upload.wikimedia.org/wikipedia/commons/2/26/Apartment_building_%284147539096%29.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://www.kvmeter.ru/upload/iblock/81e/81e07d2380554ed0c006ca0a040519b3.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_653da1561154920ba2dbc9fc_653da1e5d778ff6cb2b748c9/scale_1200",
+        tag: "plan",
+      },
     ],
     specifications: [
       "Lorem ipsum: cursus",
@@ -748,49 +1046,49 @@ export const cities = [
     id: "c39",
     name: "Нижний Новгород",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
     img: "https://avatars.mds.yandex.net/get-ydo/3913661/2a00000179fb71c267d25359546213b4854a/diploma",
   },
   {
     id: "c40",
     name: "Омск",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
     img: "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663108285_14-mykaleidoscope-ru-p-gorod-omsk-vkontakte-14.jpg",
   },
   {
     id: "c41",
     name: "Димитровград",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
     img: "http://ic.pics.livejournal.com/zdorovs/16627846/1622528/1622528_original.jpg",
   },
   {
     id: "c42",
     name: "Нижний Тагил",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
     img: "https://rossaprimavera.ru/static/files/fca060a169be.jpg",
   },
   {
     id: "c43",
     name: "Волгоград",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
     img: "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663401778_19-mykaleidoscope-ru-p-stolitsa-volgograda-pinterest-24.jpg",
   },
   {
     id: "c44",
     name: "Набережные Челны",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
     img: "https://grodno24.com/assets/thumbs/images/2023/12/naberezhnye-chelny.jpg",
   },
   {
     id: "c45",
     name: "Вязьма",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
     img: "https://tuturizm.ru/wp-content/uploads/2023/08/dji_0729-2048x1536.jpeg.webp",
   },
 ];

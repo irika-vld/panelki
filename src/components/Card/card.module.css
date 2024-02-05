@@ -6,6 +6,7 @@
   cursor: pointer;
   border: var(--border);
   margin-bottom: 16px;
+  border-radius: var(--border-radius);
 }
 
 .img {
@@ -14,6 +15,7 @@
   object-fit: cover;
   margin: 16px 0;
   box-shadow: 6px 4px 10px 5px rgba(34, 60, 80, 0.3);
+  border-radius: var(--border-radius);
 }
 
 .title {

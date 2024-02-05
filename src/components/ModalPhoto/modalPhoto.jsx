@@ -6,8 +6,8 @@ const ModalPhoto = ({ building, activePhoto, setIsOpen }) => {
     <div className={s.modal}>
       {building.images
         .filter((el) => el === activePhoto)
-        .map((el) => (
-          <img className={s.photo} src={el} alt="здание" />
+        .map((el, index) => (
+          <img key={index} className={s.photo} src={el.img} alt="здание" />
         ))}
       <button className={s.btn_close} onClick={() => setIsOpen(false)}>X</button>
     </div>
