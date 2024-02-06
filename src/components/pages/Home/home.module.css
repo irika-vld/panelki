@@ -38,3 +38,32 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+
+@media (max-width: 600px) {
+  .card_block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .title_block {
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 580px;
+    height: 250px;
+  }
+  .title {
+    font-size: 2rem;
+    color: white;
+  }
+}
+
+@media (max-width: 550px) {
+  .img {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 365px) {
+  .card_block {
+    grid-template-columns: 1fr;
+  }
+}

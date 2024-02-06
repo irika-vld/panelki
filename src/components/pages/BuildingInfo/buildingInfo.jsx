@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import s from "./buildingInfo.module.css";
 import ModalPhoto from "../../ModalPhoto/modalPhoto";
 import axios from "axios";
+import Review from "../../Review/review";
 
 const BuildingInfo = () => {
   const { title, id } = useParams();
@@ -38,21 +39,21 @@ const BuildingInfo = () => {
           setIsOpen={setIsOpen}
         />
       )}
+      <h2>{title}</h2>
+      <div className={s.photo_block}>
+        {building.images
+          .filter((el) => el.tag === "main")
+          .map((el, index) => (
+            <img
+              key={index}
+              className={s.photo}
+              src={el.img}
+              alt="здание"
+              onClick={() => clickPhotoHandler(el)}
+            />
+          ))}
+      </div>
       <div className={s.wrapper}>
-        <h2>{title}</h2>
-        <div className={s.photo_block}>
-          {building.images
-            .filter((el) => el.tag === "main")
-            .map((el, index) => (
-              <img
-                key={index}
-                className={s.photo}
-                src={el.img}
-                alt="здание"
-                onClick={() => clickPhotoHandler(el)}
-              />
-            ))}
-        </div>
         <div className={s.info_block}>
           <div className={s.technic}>
             <h2>Технические характеристики</h2>
@@ -90,9 +91,7 @@ const BuildingInfo = () => {
           <div className={s.review_description}>
             <ul className={s.review_list}>
               {review?.map((el) => (
-                <li className={s.review} key={el.id}>
-                  {el.body}
-                </li>
+                <Review key={el.id} item={el.body} />
               ))}
             </ul>
           </div>

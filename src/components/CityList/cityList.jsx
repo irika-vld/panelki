@@ -1,6 +1,6 @@
 import React from "react";
 import { cities } from "../../assets/data";
-import s from './cityList.module.css'
+import s from "./cityList.module.css";
 import { Link } from "react-router-dom";
 
 const CityList = () => {
@@ -8,7 +8,11 @@ const CityList = () => {
     <div className={s.container}>
       <ul className={s.list}>
         {cities.map((el) => (
-          <Link style={{ textDecoration: "none" }} to={`/city/${el.id}`}>
+          <Link
+            key={el.id}
+            style={{ textDecoration: "none" }}
+            to={`/city/${el.id}`}
+          >
             <li className={s.city}>{el.name}</li>
           </Link>
         ))}

@@ -11,6 +11,9 @@ h2 {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+  background-color: hsla(0, 0%, 0%, 0.296);
+  margin: 0px;
+  padding: 5px;
 }
 
 .photo {
@@ -82,6 +85,7 @@ h2 {
   flex-direction: column;
   gap: 10px;
   list-style-type: none;
+  padding: 10px;
 }
 
 .review {
@@ -110,7 +114,7 @@ h2 {
 }
 
 .review_feild:focus {
-  outline: 2px solid rgba(0, 65, 223, 1);
+  outline: 2px solid var(--color-details);
 }
 
 .btn {
@@ -119,4 +123,41 @@ h2 {
   border-radius: var(--border-radius);
   border: none;
   cursor: pointer;
+  background-color: hsla(0, 0%, 0%, 0.296);
+  color: white;
+}
+
+.btn:hover {
+  background-color: var(--color-details);
+}
+
+@media (max-width: 780px) {
+  .write_review {
+    flex-direction: column;
+  }
+
+  .info_block {
+    flex-direction: column;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .review_feild {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .photo_block {
+    grid-template-columns: 1fr;
+  }
+
+  .plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

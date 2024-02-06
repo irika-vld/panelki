@@ -1,6 +1,6 @@
-.container {
+/* .container {
   display: flex;
-}
+} */
 
 .list {
   list-style-type: none;
@@ -11,15 +11,44 @@
   gap: 5px;
   align-items: center;
   text-align: center;
-  background: var(--background-gradient-header);
+  background: var(--background-color-gradient);
   position: absolute;
   right: 0;
   left: 0;
+  bottom: -270px;
 }
 
 .city {
   font-size: 14px;
   padding: 5px;
   cursor: pointer;
-  color: black !important;
+  color: white;
+}
+
+.city:hover {
+  color: var(--color-details);
+}
+
+@media (max-width: 750px) {
+.list {
+  grid-template-columns: repeat(4, 1fr);
+  height: 400px;
+  bottom: -370px;
+}
+}
+
+@media (max-width: 465px) {
+.list {
+  grid-template-columns: repeat(3, 1fr);
+  height: 600px;
+  bottom: -570px;
+}
+}
+
+@media (max-width: 375px) {
+.list {
+  grid-template-columns: repeat(2, 1fr);
+  height: 730px;
+  bottom: -730px;
+}
 }

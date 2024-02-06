@@ -892,7 +892,7 @@ export const cities = [
     id: "c17",
     name: "Москва",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Etiam non metus nibh. Nunc purus purus, dignissim vel erat non, aliquet suscipit ligula. Donec vestibulum nulla in enim sollicitudin lacinia a ac est. Maecenas tempor purus magna, et dignissim ex dignissim ut. Sed nisl nulla, pharetra ut molestie in, scelerisque vel elit.",
+      "Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit.",
     img: "https://s0.rbk.ru/v6_top_pics/media/img/2/42/756438927867422.jpg",
   },
   {
@@ -906,7 +906,7 @@ export const cities = [
     id: "c19",
     name: "Тула",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Etiam non metus nibh. Nunc purus purus, dignissim vel erat non, aliquet suscipit ligula. Donec vestibulum nulla in enim sollicitudin lacinia a ac est. Maecenas tempor purus magna, et dignissim ex dignissim ut. Sed nisl nulla, pharetra ut molestie in, scelerisque vel elit.",
+      "Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit.",
     img: "https://cdn5.vedomosti.ru/image/2022/5x/q1uj1/original-xrg.jpg",
   },
   {
@@ -941,7 +941,7 @@ export const cities = [
     id: "c24",
     name: "Тверь",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Etiam non metus nibh. Nunc purus purus, dignissim vel erat non, aliquet suscipit ligula. Donec vestibulum nulla in enim sollicitudin lacinia a ac est. Maecenas tempor purus magna, et dignissim ex dignissim ut. Sed nisl nulla, pharetra ut molestie in, scelerisque vel elit. Praesent tempus erat eu dictum scelerisque. Etiam non metus nibh. Nunc purus purus",
+      "Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit.",
     img: "https://avatars.dzeninfra.ru/get-zen_doc/5097825/pub_632c268cb55aa2108f9a00a8_632c268efaad052e67046588/scale_1200",
   },
   {
@@ -1046,7 +1046,7 @@ export const cities = [
     id: "c39",
     name: "Нижний Новгород",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
+      "Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit.",
     img: "https://avatars.mds.yandex.net/get-ydo/3913661/2a00000179fb71c267d25359546213b4854a/diploma",
   },
   {
@@ -1074,14 +1074,14 @@ export const cities = [
     id: "c43",
     name: "Волгоград",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
+      "Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit.",
     img: "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663401778_19-mykaleidoscope-ru-p-stolitsa-volgograda-pinterest-24.jpg",
   },
   {
     id: "c44",
     name: "Набережные Челны",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
+      "Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit.",
     img: "https://grodno24.com/assets/thumbs/images/2023/12/naberezhnye-chelny.jpg",
   },
   {
@@ -1091,4 +1091,16 @@ export const cities = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, faucibus sit amet velit non, accumsan pharetra elit. Praesent tempus erat eu dictum scelerisque.",
     img: "https://tuturizm.ru/wp-content/uploads/2023/08/dji_0729-2048x1536.jpeg.webp",
   },
+];
+
+export const names = [
+  "Остин Аттвуд",
+  "Аттал Деборд",
+  "Винициан Куратовский",
+  "Марианна Титова",
+  "Максимиллиан Шестаков",
+  "Полина Тетерина",
+  "Филипп Быков",
+  "Ангелина Фролова",
+  "Валентина Белякова",
 ];

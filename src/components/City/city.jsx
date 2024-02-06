@@ -1,7 +1,6 @@
 import React from "react";
 import s from "./city.module.css";
 import CityList from "../CityList/cityList";
-
 const City = () => {
   const [listIsOpen, setListIsOpen] = React.useState(false);
 
