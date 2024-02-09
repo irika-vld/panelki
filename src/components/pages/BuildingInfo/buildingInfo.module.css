@@ -2,6 +2,10 @@
   padding: 18px;
 }
 
+.wrapper .noScroll {
+  overflow: hidden;
+}
+
 h2 {
   margin: 30px;
   text-align: center;
@@ -20,7 +24,7 @@ h2 {
   width: 100%;
   height: 300px;
   cursor: pointer;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: var(--border-radius);
 }
 
@@ -78,6 +82,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .review_list {
@@ -111,6 +116,7 @@ h2 {
 .review_feild {
   padding: 10px;
   box-sizing: border-box;
+  resize: none;
 }
 
 .review_feild:focus {
@@ -149,6 +155,10 @@ h2 {
   .review_feild {
     max-width: 400px;
     width: 100%;
+    height: 60px;
+  }
+  .plans {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -156,8 +166,11 @@ h2 {
   .photo_block {
     grid-template-columns: 1fr;
   }
+}
 
+@media (max-width: 360px) {
   .plans {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 3px;
   }
 }

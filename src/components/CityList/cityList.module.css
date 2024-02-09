@@ -1,21 +1,29 @@
-/* .container {
+@keyframes slidein {
+  from {
+    top: 660px;
+  }
+
+  to {
+    top: 680px;
+  }
+}
+
+.container {
   display: flex;
-} */
+  background: var(--background-color-gradient);
+  position: absolute;
+  animation: slidein 1s ease-in-out forwards;
+  animation-iteration-count: 1;
+}
 
 .list {
   list-style-type: none;
-  height: 300px;
   margin: 20px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 5px;
   align-items: center;
   text-align: center;
-  background: var(--background-color-gradient);
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: -270px;
 }
 
 .city {
@@ -30,25 +38,32 @@
 }
 
 @media (max-width: 750px) {
-.list {
-  grid-template-columns: repeat(4, 1fr);
-  height: 400px;
-  bottom: -370px;
-}
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+    height: 400px;
+  }
 }
 
 @media (max-width: 465px) {
-.list {
-  grid-template-columns: repeat(3, 1fr);
-  height: 600px;
-  bottom: -570px;
-}
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+    height: 600px;
+  }
 }
 
 @media (max-width: 375px) {
-.list {
-  grid-template-columns: repeat(2, 1fr);
-  height: 730px;
-  bottom: -730px;
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+    height: 730px;
+  }
+
+  @keyframes slidein {
+  from {
+    top: 700px;
+  }
+
+  to {
+    top: 720px;
+  }
 }
 }

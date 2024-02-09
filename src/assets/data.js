@@ -9,6 +9,7 @@ export const panelki = [
       "Ульяновск",
       "Удомля",
       "Волгодонск",
+      "Бугульма",
     ],
     images: [
       {
@@ -61,6 +62,7 @@ export const panelki = [
     ],
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
+    type: "rare",
   },
 
   {
@@ -73,6 +75,11 @@ export const panelki = [
       "Санкт-Петербург",
       "Барнаул",
       "Курган",
+      "Ульяновск",
+      "Удомля",
+      "Волгодонск",
+      "Армавир",
+      "Магнитогорск",
     ],
     images: [
       {
@@ -129,6 +136,7 @@ export const panelki = [
     ],
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
+    type: "popular",
   },
   {
     id: 3,
@@ -169,6 +177,7 @@ export const panelki = [
     ],
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
+    type: "rare",
   },
   {
     id: 4,
@@ -232,11 +241,22 @@ export const panelki = [
     ],
     description:
       "Типичный жилой дом серии II-49 представляет собой многосекционную крупнопанельную девятиэтажку. В столице имеются экспериментальные здания этой серии из 12 этажей, но они не получили массового распространения. Разработанный в конце 60-х годов, дом серии II-49 был призван сменить в Москве и других городах устаревшие хрущевки К-7.",
+    type: "rare",
   },
   {
     id: 5,
     name: "П-44",
-    cities: ["Москва", "Армавир", "Владимир", "Люберцы", "Красноярск", "Тверь"],
+    cities: [
+      "Москва",
+      "Армавир",
+      "Владимир",
+      "Люберцы",
+      "Красноярск",
+      "Тверь",
+      "Уфа",
+      "Ярославль",
+      "Орел",
+    ],
     images: [
       {
         img: "https://zelgorod.ru/uploads/all/84/3e/b3/843eb3537b10376cd2415483e1d53e31.jpg",
@@ -292,11 +312,20 @@ export const panelki = [
     ],
     description:
       "В 1975 году дом серии П-44 появился в Москве в виде 16-этажного здания, но уже к 1979 году эти высотки строились с 17 этажами. Серия была признана удачной и получила широкое распространение в столице и Подмосковье, а также в ряде других городов. Её модификации возводятся и сейчас. Перепланировка квартиры в доме серии П-44 с целью оптимизации пространства и повышения комфортности жилья сегодня достаточно популярна. Дом серии П-44 характеризуется удачными планировочными решениями. Эти панельные высотки состоят из рядовых 4-квартирных и торцовых (угловых) 2-квартирных секций из 1, 2, 3 комнат.",
+    type: "rare",
   },
   {
     id: 6,
     name: "II-68",
-    cities: ["Москва", "Тольятти", "Десногорск"],
+    cities: [
+      "Москва",
+      "Тольятти",
+      "Десногорск",
+      "Троицк",
+      "Ульяновск",
+      "Нижний Новгород",
+      "Набережные Челны",
+    ],
     images: [
       {
         img: "https://flatinfo.ru/articles/img/2-68-162.png",
@@ -340,11 +369,20 @@ export const panelki = [
     ],
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
+    type: "rare",
   },
   {
     id: 7,
     name: "II-18",
-    cities: ["Москва", "Троицк", "Казань", "Бугульма", "Пермь", "Магнитогорск"],
+    cities: [
+      "Москва",
+      "Троицк",
+      "Казань",
+      "Бугульма",
+      "Пермь",
+      "Магнитогорск",
+      "Нижний Тагил",
+    ],
     images: [
       {
         img: "https://avatars.dzeninfra.ru/get-zen_doc/9712324/pub_64366d8491eb4f2070909fb2_6437a035766d56620f1e0543/scale_1200",
@@ -382,11 +420,19 @@ export const panelki = [
     ],
     description:
       "Дом серии ii-18 имеет ряд конструктивных особенностей, дающих простор для преобразований: большинство внутриквартирных стен – не несущие нагрузок; балконы в каждом жилище выше 3-го этажа; санузлы раздельные, кроме «однушек»; в большинстве «двушек» и во всех «трешках» присутствует смежность комнат. Недостатками планировки дома серии ii-18 традиционно называют тесные прихожие, сидячие ванны в однокомнатных квартирах и маленькие кухни в двухкомнатных.",
+    type: "rare",
   },
   {
     id: 8,
     name: "II-30",
-    cities: ["Москва", "Набережные Челны", "Тольятти", "Вязьма"],
+    cities: [
+      "Москва",
+      "Набережные Челны",
+      "Тольятти",
+      "Вязьма",
+      "Нижний Новгород",
+      "Владивосток",
+    ],
     images: [
       {
         img: "https://9-img.onrealt.ru/files/05-2023/05/9a/70/moskva-kypit-kvartiru-vtorichnoe-zhilje-ulitca-leskova-6-73291090.jpg",
@@ -444,6 +490,7 @@ export const panelki = [
     ],
     description:
       "Дом серии П-30 – это панельная многоэтажка, внешне легко узнаваемая по двум характерным признакам: балконам, «утопленным» в фасаде, и наличию лоджий на торце здания. В отличие от других «панелек», эта серия не стала массовой, хотя довольно активно возводилась с начала 70-х годов прошлого века по 2005 год. Дома серии П-30 можно встретить в спальных районах Москвы (Орехово-Борисово, Отрадное, Ивановское, Южное Тушино, Бибирево и др.), нескольких райцентрах Подмосковья, в Набережных Челнах, Тольятти, Вязьме и некоторых других городах",
+    type: "rare",
   },
   {
     id: 9,
@@ -455,6 +502,7 @@ export const panelki = [
       "Дубна",
       "Орел",
       "Новосибирск",
+      "Пенза",
     ],
     images: [
       {
@@ -491,6 +539,7 @@ export const panelki = [
     ],
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
+    type: "rare",
   },
   {
     id: 10,
@@ -503,6 +552,14 @@ export const panelki = [
       "Барнаул",
       "Казань",
       "Тюмень",
+      "Самара",
+      "Ульяновск",
+      "Уфа",
+      "Волгодонск",
+      "Курган",
+      "Ростов-на-Дону",
+      "Красноярск",
+      "Новосибирск",
     ],
     images: [
       {
@@ -567,11 +624,24 @@ export const panelki = [
     ],
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
+    type: "popular",
   },
   {
     id: 11,
     name: "1-515",
-    cities: ["Владивосток", "Владимир", "Тольятти", "Уфа", "Казань", "Брянск"],
+    cities: [
+      "Владивосток",
+      "Владимир",
+      "Тольятти",
+      "Уфа",
+      "Казань",
+      "Брянск",
+      "Троицк",
+      "Вязьма",
+      "Балашиха",
+      "Тверь",
+      "Барнаул",
+    ],
     images: [
       {
         img: "https://flatinfo.ru/uploads/house_source/23629_2.jpg",
@@ -631,6 +701,7 @@ export const panelki = [
     ],
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
+    type: "popular",
   },
   {
     id: 12,
@@ -645,6 +716,24 @@ export const panelki = [
       "Пермь",
       "Димитровград",
       "Брянск",
+      "Самара",
+      "Ульяновск",
+      "Уфа",
+      "Волгодонск",
+      "Санкт-Петербург",
+      "Курган",
+      "Пенза",
+      "Йошкар-Ола",
+      "Ростов-на-Дону",
+      "Люберцы",
+      "Красноярск",
+      "Бугульма",
+      "Магнитогорск",
+      "Подольск",
+      "Дубна",
+      "Новосибирск",
+      "Волгоград",
+      "Нижний Тагил",
     ],
     images: [
       {
@@ -685,6 +774,7 @@ export const panelki = [
     ],
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
+    type: "popular",
   },
   {
     id: 13,
@@ -696,6 +786,10 @@ export const panelki = [
       "Ярославль",
       "Хабаровск",
       "Пермь",
+      "Ульяновск",
+      "Барнаул",
+      "Красноярск",
+      "Подольск",
     ],
     images: [
       {
@@ -732,11 +826,28 @@ export const panelki = [
     ],
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
+    type: "rare",
   },
   {
     id: 14,
     name: "114-86",
-    cities: ["Казань", "Волгоград", "Тюмень", "Омск", "Ухта", "Димитровград"],
+    cities: [
+      "Казань",
+      "Волгоград",
+      "Тюмень",
+      "Омск",
+      "Ухта",
+      "Димитровград",
+      "Ульяновск",
+      "Удомля",
+      "Волгодонск",
+      "Барнаул",
+      "Курган",
+      "Пенза",
+      "Армавир",
+      "Красноярск",
+      "Бугульма",
+    ],
     images: [
       {
         img: "https://prawdom.ru/progjekt_docs/1-86_vid1.jpg",
@@ -772,6 +883,7 @@ export const panelki = [
     ],
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
+    type: "popular",
   },
 ];
 

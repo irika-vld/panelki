@@ -1,0 +1,105 @@
+.suggestion {
+  width: 60vw;
+  height: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 23%;
+  background-color: hsla(0, 0%, 0%, 0.668);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px 20px;
+
+  p {
+    margin: 0;
+  }
+
+  textarea {
+    padding: 8px;
+    resize: none;
+    max-width: 300px;
+    min-width: 90px;
+    width: 100%;
+  }
+
+  textarea:focus {
+    outline: 2px solid var(--color-details);
+  }
+}
+
+.field:required {
+  border: 1px solid red;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--color-details);
+  border-radius: var(--border-radius);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  margin-top: 8px;
+  background-color: var(--color-details);
+  border-radius: var(--border-radius);
+  border: none;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.close:active,
+.btn:active {
+  border: 1px solid white;
+}
+
+@media (max-width: 1063px) {
+  .suggestion {
+    width: 100vw;
+    left: 0;
+  }
+}
+
+@media (max-width: 638px) {
+
+  .field {
+    flex-direction: column;
+    margin: 5px 10px;
+    gap: 18px;
+  }
+
+  textarea {
+    height: 36px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+}

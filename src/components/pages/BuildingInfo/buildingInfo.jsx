@@ -1,15 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { panelki } from "../../../assets/data";
 import { useParams } from "react-router-dom";
 import s from "./buildingInfo.module.css";
 import ModalPhoto from "../../ModalPhoto/modalPhoto";
 import axios from "axios";
 import Review from "../../Review/review";
+import NewInfoModal from "../../NewInfoModal/newInfoModal";
 
-const BuildingInfo = () => {
+const BuildingInfo = ({ isOpen, setIsOpen, infoAdded, setInfoAdded }) => {
   const { title, id } = useParams();
   const building = panelki.filter((el) => el.id === Number(id))[0];
-  const [isOpen, setIsOpen] = React.useState(false);
+
   const [activePhoto, setActivePhoto] = React.useState("");
   const [reviews, setReviews] = React.useState([]);
   const [value, setValue] = React.useState("");
@@ -19,7 +20,7 @@ const BuildingInfo = () => {
     setActivePhoto(src);
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     axios
       .get("https://jsonplaceholder.typicode.com/posts?_limit=4")
       .then((res) => {
@@ -27,6 +28,10 @@ const BuildingInfo = () => {
         setReviews([...reviews, data]);
       });
   }, []);
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [isOpen]);
 
   const review = reviews[0];
 
@@ -96,7 +101,7 @@ const BuildingInfo = () => {
             </ul>
           </div>
           <div className={s.write_review}>
-            <p>Напиши свой отзыв об этом доме</p>
+            <p>Напишите свой отзыв об этом доме</p>
             <textarea
               className={s.review_feild}
               value={value}
@@ -104,9 +109,12 @@ const BuildingInfo = () => {
               name="textarea"
               rows="8"
               cols="70"
-              placeholder="Write a review of the house"
+              placeholder="Напишите отзыв и укажите ваш e-mail на случай необходимости уточнений"
             />
-            <button className={s.btn}>Отправить</button>
+            <button className={s.btn} onClick={() => setInfoAdded(true)}>
+              Отправить
+            </button>
+            {infoAdded ? <NewInfoModal setInfoAdded={setInfoAdded} /> : ""}
           </div>
         </div>
       </div>

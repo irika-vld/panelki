@@ -9,6 +9,10 @@ const CityInfo = () => {
   const city = cities.filter((el) => el.id === id)[0];
   const filtredPanelki = panelki.filter((el) => el.cities.includes(city.name));
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={s.wrapper}>
       <h2 className={s.title}>{city.name}</h2>

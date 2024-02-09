@@ -1,0 +1,42 @@
+.addInfo_block {
+  width: 40vw;
+  height: 30vh;
+  background-color: hsla(0, 0%, 0%, 0.668);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 35%;
+  left: 35%;
+}
+
+.success {
+  display: flex;
+}
+h2 {
+  margin-right: 10px;
+}
+
+.img {
+  position: absolute;
+  right: 65px;
+}
+
+.info {
+  text-align: center;
+  padding: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--color-details);
+  border-radius: var(--border-radius);
+  color: white;
+  cursor: pointer;
+}
