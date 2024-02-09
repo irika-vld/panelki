@@ -1,13 +1,13 @@
 :root {
-  --background-color-gradient: linear-gradient(180deg, rgba(254,255,255,1) 0%, rgba(231,245,255,1) 75%, rgba(0,65,223,1) 100%);
-  --background-gradient-header: linear-gradient(180deg, rgba(0,65,223,1) 0%, rgba(231,245,255,1) 63%, rgba(255,255,255,1) 100%);
+  --background-color-gradient: linear-gradient(45deg, #6a85b6, #bac8e0);
   --border: 2px solid rgb(229, 232, 240);
-  --shadow-card-info: 5px 3px 5px rgb(51, 51, 51);
-  
+  --shadow-card-info: 1px 1px 5px 3px rgb(51, 51, 51);
+  --border-radius: 5px;
+  --color-details: #40516f;
 }
 
 * {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

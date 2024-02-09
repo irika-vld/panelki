@@ -1,9 +1,11 @@
 .modal {
   display: flex;
-  position: absolute;
+  position: fixed;
+  top: 0;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  background-color: black;
 }
 
 .photo {
@@ -11,14 +13,21 @@
   width: 100%;
   height: 550px;
   position: absolute;
+  top: 100px;
+  object-fit: contain;
 }
 
 .btn_close {
   width: 40px;
   height: 40px;
-  background-color: brown;
+  background-color: var(--color-details);
+  border-radius: var(--border-radius);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
   position: absolute;
-  right: 120px;
-  top: -50px;
+  right: 20px;
+  top: 20px;
   cursor: pointer;
+  z-index: 3;
 }

@@ -1,0 +1,17 @@
+.upper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.rating {
+  display: flex;
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}

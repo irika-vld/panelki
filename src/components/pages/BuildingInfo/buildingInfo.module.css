@@ -1,0 +1,176 @@
+.wrapper {
+  padding: 18px;
+}
+
+.wrapper .noScroll {
+  overflow: hidden;
+}
+
+h2 {
+  margin: 30px;
+  text-align: center;
+}
+
+.photo_block {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: hsla(0, 0%, 0%, 0.296);
+  margin: 0px;
+  padding: 5px;
+}
+
+.photo {
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+.info_block {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.list {
+  margin: 30px;
+  list-style-type: disclosure-closed;
+}
+.technic {
+  border: var(--border);
+  box-shadow: var(--shadow-card-info);
+  border-radius: var(--border-radius);
+}
+
+.description {
+  max-width: 500px;
+  min-width: 200px;
+  width: 100%;
+  border: var(--border);
+  box-shadow: var(--shadow-card-info);
+  border-radius: var(--border-radius);
+}
+
+.specifications {
+  margin-top: 16px;
+}
+
+.plans_block {
+  margin-bottom: 30px;
+}
+
+.plans {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.photo_plan {
+  max-width: 250px;
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+
+.review_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.review_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.review {
+  padding: 10px;
+}
+
+.review_description {
+  max-width: 900px;
+  min-width: 300px;
+  width: 100%;
+  border: var(--border);
+  box-shadow: var(--shadow-card-info);
+  border-radius: var(--border-radius);
+}
+
+.write_review {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 30px;
+}
+
+.review_feild {
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.review_feild:focus {
+  outline: 2px solid var(--color-details);
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+  background-color: hsla(0, 0%, 0%, 0.296);
+  color: white;
+}
+
+.btn:hover {
+  background-color: var(--color-details);
+}
+
+@media (max-width: 780px) {
+  .write_review {
+    flex-direction: column;
+  }
+
+  .info_block {
+    flex-direction: column;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .review_feild {
+    max-width: 400px;
+    width: 100%;
+    height: 60px;
+  }
+  .plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .photo_block {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 360px) {
+  .plans {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+}
