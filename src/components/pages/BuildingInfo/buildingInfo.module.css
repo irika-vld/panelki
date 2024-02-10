@@ -2,20 +2,17 @@
   padding: 18px;
 }
 
-.wrapper .noScroll {
-  overflow: hidden;
-}
-
 h2 {
   margin: 30px;
   text-align: center;
+  color: var(--color-details);
 }
 
 .photo_block {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  background-color: hsla(0, 0%, 0%, 0.296);
+  background-color: var(--color-shadow-btn);
   margin: 0px;
   padding: 5px;
 }
@@ -129,12 +126,16 @@ h2 {
   border-radius: var(--border-radius);
   border: none;
   cursor: pointer;
-  background-color: hsla(0, 0%, 0%, 0.296);
-  color: white;
+  background-color: var(--color-details);
+  color: var(--color-white);
 }
 
 .btn:hover {
-  background-color: var(--color-details);
+  background-color: var(--color-shadow-btn);
+}
+
+.btn:active {
+  border: var(--border-btn-active);
 }
 
 @media (max-width: 780px) {

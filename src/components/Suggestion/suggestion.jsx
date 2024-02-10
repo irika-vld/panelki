@@ -12,7 +12,7 @@ const Suggestion = ({ setIsSuggested, sentButtonHandler }) => {
             name="textarea"
             rows="2"
             cols="40"
-            maxlength="20"
+            maxLength="20"
             required
           />
         </div>

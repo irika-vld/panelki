@@ -1,10 +1,10 @@
 @keyframes slidein {
   from {
-    top: 660px;
+    top: 1200px;
   }
 
   to {
-    top: 680px;
+    top: 1230px;
   }
 }
 
@@ -30,7 +30,7 @@
   font-size: 14px;
   padding: 5px;
   cursor: pointer;
-  color: white;
+  color: var(--color-white);
 }
 
 .city:hover {
@@ -51,6 +51,18 @@
   }
 }
 
+@media (max-width: 690px) {
+  @keyframes slidein {
+    from {
+      top: 750px;
+    }
+
+    to {
+      top: 770px;
+    }
+  }
+}
+
 @media (max-width: 375px) {
   .list {
     grid-template-columns: repeat(2, 1fr);
@@ -58,12 +70,12 @@
   }
 
   @keyframes slidein {
-  from {
-    top: 700px;
-  }
+    from {
+      top: 750px;
+    }
 
-  to {
-    top: 720px;
+    to {
+      top: 770px;
+    }
   }
-}
 }

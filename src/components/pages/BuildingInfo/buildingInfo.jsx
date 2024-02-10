@@ -35,8 +35,20 @@ const BuildingInfo = ({ isOpen, setIsOpen, infoAdded, setInfoAdded }) => {
 
   const review = reviews[0];
 
+  const clickSentBtn = (str) => {
+    const userReview = {
+      body: str,
+      id: new Date(),
+      title: str,
+      userId: new Date(),
+    };
+    setInfoAdded(true);
+    review.push(userReview);
+  };
+
   return (
     <>
+      {/* {isOpen ? (document.body.style.overflow = "hidden") : ""} */}
       {isOpen && (
         <ModalPhoto
           building={building}
@@ -58,7 +70,7 @@ const BuildingInfo = ({ isOpen, setIsOpen, infoAdded, setInfoAdded }) => {
             />
           ))}
       </div>
-      <div className={s.wrapper}>
+      <main className={s.wrapper}>
         <div className={s.info_block}>
           <div className={s.technic}>
             <h2>Технические характеристики</h2>
@@ -111,13 +123,13 @@ const BuildingInfo = ({ isOpen, setIsOpen, infoAdded, setInfoAdded }) => {
               cols="70"
               placeholder="Напишите отзыв и укажите ваш e-mail на случай необходимости уточнений"
             />
-            <button className={s.btn} onClick={() => setInfoAdded(true)}>
+            <button className={s.btn} onClick={() => clickSentBtn(value)}>
               Отправить
             </button>
             {infoAdded ? <NewInfoModal setInfoAdded={setInfoAdded} /> : ""}
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 };

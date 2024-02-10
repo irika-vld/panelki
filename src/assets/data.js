@@ -63,6 +63,7 @@ export const panelki = [
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "rare",
+    material: "панельный",
   },
 
   {
@@ -83,11 +84,11 @@ export const panelki = [
     ],
     images: [
       {
-        img: "https://www.zdanija.ru/plugins/p17_image_gallery/images/md/17/5060.jpg",
+        img: "https://vsedomarossii.ru/photos/area_63/city_2474/street_1730/1211_11.jpg",
         tag: "main",
       },
       {
-        img: "https://vsedomarossii.ru/photos/area_63/city_2474/street_1730/1211_11.jpg",
+        img: "https://www.zdanija.ru/plugins/p17_image_gallery/images/md/17/5060.jpg",
         tag: "main",
       },
       {
@@ -137,6 +138,7 @@ export const panelki = [
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "popular",
+    material: "панельный",
   },
   {
     id: 3,
@@ -178,6 +180,7 @@ export const panelki = [
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "rare",
+    material: "панельный",
   },
   {
     id: 4,
@@ -242,6 +245,7 @@ export const panelki = [
     description:
       "Типичный жилой дом серии II-49 представляет собой многосекционную крупнопанельную девятиэтажку. В столице имеются экспериментальные здания этой серии из 12 этажей, но они не получили массового распространения. Разработанный в конце 60-х годов, дом серии II-49 был призван сменить в Москве и других городах устаревшие хрущевки К-7.",
     type: "rare",
+    material: "панельный",
   },
   {
     id: 5,
@@ -313,6 +317,7 @@ export const panelki = [
     description:
       "В 1975 году дом серии П-44 появился в Москве в виде 16-этажного здания, но уже к 1979 году эти высотки строились с 17 этажами. Серия была признана удачной и получила широкое распространение в столице и Подмосковье, а также в ряде других городов. Её модификации возводятся и сейчас. Перепланировка квартиры в доме серии П-44 с целью оптимизации пространства и повышения комфортности жилья сегодня достаточно популярна. Дом серии П-44 характеризуется удачными планировочными решениями. Эти панельные высотки состоят из рядовых 4-квартирных и торцовых (угловых) 2-квартирных секций из 1, 2, 3 комнат.",
     type: "rare",
+    material: "панельный",
   },
   {
     id: 6,
@@ -370,6 +375,7 @@ export const panelki = [
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "rare",
+    material: "блочный",
   },
   {
     id: 7,
@@ -421,6 +427,7 @@ export const panelki = [
     description:
       "Дом серии ii-18 имеет ряд конструктивных особенностей, дающих простор для преобразований: большинство внутриквартирных стен – не несущие нагрузок; балконы в каждом жилище выше 3-го этажа; санузлы раздельные, кроме «однушек»; в большинстве «двушек» и во всех «трешках» присутствует смежность комнат. Недостатками планировки дома серии ii-18 традиционно называют тесные прихожие, сидячие ванны в однокомнатных квартирах и маленькие кухни в двухкомнатных.",
     type: "rare",
+    material: "блочный",
   },
   {
     id: 8,
@@ -491,6 +498,7 @@ export const panelki = [
     description:
       "Дом серии П-30 – это панельная многоэтажка, внешне легко узнаваемая по двум характерным признакам: балконам, «утопленным» в фасаде, и наличию лоджий на торце здания. В отличие от других «панелек», эта серия не стала массовой, хотя довольно активно возводилась с начала 70-х годов прошлого века по 2005 год. Дома серии П-30 можно встретить в спальных районах Москвы (Орехово-Борисово, Отрадное, Ивановское, Южное Тушино, Бибирево и др.), нескольких райцентрах Подмосковья, в Набережных Челнах, Тольятти, Вязьме и некоторых других городах",
     type: "rare",
+    material: "панельный",
   },
   {
     id: 9,
@@ -540,6 +548,7 @@ export const panelki = [
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "rare",
+    material: "кирпичный",
   },
   {
     id: 10,
@@ -563,11 +572,11 @@ export const panelki = [
     ],
     images: [
       {
-        img: "https://skedraft.ru/wp-content/uploads/2018/09/dom-serii-1-464_2.jpg",
+        img: "https://img.dmclk.ru/q80/eva_house/1e/2b/1e2b19f0a81f4cd1819451893792e1969f8136e8.jpg",
         tag: "main",
       },
       {
-        img: "https://img.dmclk.ru/q80/eva_house/1e/2b/1e2b19f0a81f4cd1819451893792e1969f8136e8.jpg",
+        img: "https://skedraft.ru/wp-content/uploads/2018/09/dom-serii-1-464_2.jpg",
         tag: "main",
       },
       {
@@ -625,6 +634,7 @@ export const panelki = [
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "popular",
+    material: "панельный",
   },
   {
     id: 11,
@@ -702,6 +712,7 @@ export const panelki = [
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "popular",
+    material: "панельный",
   },
   {
     id: 12,
@@ -737,7 +748,7 @@ export const panelki = [
     ],
     images: [
       {
-        img: "https://alpinistspb.ru/wp-content/uploads/2020/07/kak-opredelit-seriju-doma.jpg",
+        img: "http://ixbt.photo/photo/1312445/63952g6n0D4CxNx/ldx5qiPtcs/1284127.jpg",
         tag: "main",
       },
       {
@@ -775,6 +786,7 @@ export const panelki = [
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "popular",
+    material: "кирпичный",
   },
   {
     id: 13,
@@ -827,6 +839,7 @@ export const panelki = [
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "rare",
+    material: "кирпичный",
   },
   {
     id: 14,
@@ -884,6 +897,108 @@ export const panelki = [
     description:
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "popular",
+    material: "кирпичный",
+  },
+  {
+    id: 15,
+    name: "90",
+    cities: [
+      "Нижний Новгород",
+      "Новосибирск",
+      "Омск",
+      "Орел",
+      "Казань",
+      "Ростов-на-Дону",
+      "Самара",
+      "Вязьма",
+      "Ярославль",
+    ],
+    images: [
+      {
+        img: "https://photobuildings.com/photo/02/59/07/259079.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://photobuildings.com/photo/00/69/94/69942.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://photobuildings.com/object/138496/",
+        tag: "main",
+      },
+      {
+        img: "https://www.kvmeter.ru/upload/iblock/e31/e31b214b6e354a3dc845aea2bf33788e.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.zdanija.ru/forum/uploads/monthly_12_2011/post-29540-1324579924_thumb.jpg",
+        tag: "plan",
+      },
+    ],
+    specifications: [
+      "Lorem ipsum: cursus",
+      "Dolor sit amet: ullamcorper vestibulum sit amet ut orci",
+      "Sed eu: ultricies imperdiet nisl a euismod",
+      "Fusce vel consectetur nunc: 2,64 м",
+      "Praesent rhoncus: justo leo, faucibus in nisl at, luctus egestas lectus",
+      "Fusce vel ultrices: purus ligula, consectetur at augue in, aliquet placerat leo",
+      "Sed mollis: ut sem ac orci ullamcorper vestibulum sit amet ut orci",
+      "Morbi laoreet justo dolor: vulputate porttitor ex, vitae mollis dolor tincidunt sed",
+      "Quisque: mauris vitae cursus scelerisque, metus lectus semper ex, sit amet ",
+    ],
+    description:
+      "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
+    type: "popular",
+    material: "панельный",
+  },
+  {
+    id: 16,
+    name: "1-335",
+    cities: [
+      "Красноярск",
+      "Москва",
+      "Омск",
+      "Уфа",
+      "Самара",
+      "Санкт-Петербург",
+    ],
+    images: [
+      {
+        img: "https://photobuildings.com/photo/00/50/92/50927.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://photobuildings.com/photo/02/02/04/202041.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://photobuildings.com/photo/02/50/74/250743.jpg",
+        tag: "main",
+      },
+      {
+        img: "https://img.dmclk.ru/almanac/1e/dd/83d1004e9cdb4364bfa86b0602ddde4e.jpg",
+        tag: "plan",
+      },
+      {
+        img: "https://www.kvmeter.ru/upload/iblock/538/5381b2f7b88c2fd9f1ef7f2d29a26f73.jpg",
+        tag: "plan",
+      },
+    ],
+    specifications: [
+      "Lorem ipsum: cursus",
+      "Dolor sit amet: ullamcorper vestibulum sit amet ut orci",
+      "Sed eu: ultricies imperdiet nisl a euismod",
+      "Fusce vel consectetur nunc: 2,64 м",
+      "Praesent rhoncus: justo leo, faucibus in nisl at, luctus egestas lectus",
+      "Fusce vel ultrices: purus ligula, consectetur at augue in, aliquet placerat leo",
+      "Sed mollis: ut sem ac orci ullamcorper vestibulum sit amet ut orci",
+      "Morbi laoreet justo dolor: vulputate porttitor ex, vitae mollis dolor tincidunt sed",
+      "Quisque: mauris vitae cursus scelerisque, metus lectus semper ex, sit amet ",
+    ],
+    description:
+      "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
+    type: "rare",
+    material: "панельный",
   },
 ];
 

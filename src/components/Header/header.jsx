@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 const Header = ({ isOpen }) => {
   return (
     <header className={s.header}>
-      <Link to="/" style={{ textDecoration: "none" }}>
+      <Link
+        to="/"
+        style={{ textDecoration: "none" }}
+      >
         <div className={isOpen ? s.logo_none : s.logo_block}>
           <img
             className={s.logo}

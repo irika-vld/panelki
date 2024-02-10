@@ -14,7 +14,7 @@ const CityInfo = () => {
   }, []);
 
   return (
-    <div className={s.wrapper}>
+    <main className={s.wrapper}>
       <h2 className={s.title}>{city.name}</h2>
       <div className={s.info}>
         <img className={s.photo} src={city.img} alt="город" />
@@ -30,7 +30,7 @@ const CityInfo = () => {
           ))}
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

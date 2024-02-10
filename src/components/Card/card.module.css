@@ -7,6 +7,12 @@
   border: var(--border);
   margin-bottom: 16px;
   border-radius: var(--border-radius);
+  box-shadow: 6px 4px 10px 5px rgba(34, 60, 80, 0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 6px 4px 10px 5px rgba(231, 232, 233, 0.318);
 }
 
 .img {
@@ -14,7 +20,6 @@
   height: 200px;
   object-fit: cover;
   margin-bottom: 16px;
-  box-shadow: 6px 4px 10px 5px rgba(34, 60, 80, 0.3);
   border-radius: var(--border-radius);
 }
 
@@ -22,8 +27,9 @@
   font-size: 1.5rem;
   margin-bottom: 16px;
   color: var(--color-details);
+  transition: 0.3s;
 }
 
 .title:hover {
-  color: black;
+  color: var(--color-white)
 }

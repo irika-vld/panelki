@@ -1,9 +1,16 @@
 :root {
-  --background-color-gradient: linear-gradient(45deg, #6a85b6, #bac8e0);
+  --background-color-gradient: linear-gradient(
+    45deg,
+    rgb(162, 167, 228),
+    rgb(137, 194, 249)
+  );
   --border: 2px solid rgb(229, 232, 240);
+  --border-btn-active: 1px solid #ffffff;
   --shadow-card-info: 1px 1px 5px 3px rgb(51, 51, 51);
   --border-radius: 5px;
-  --color-details: #40516f;
+  --color-details: rgb(51, 61, 164);
+  --color-shadow-btn: hsla(0, 0%, 0%, 0.571);
+  --color-white: #ffffff;
 }
 
 * {

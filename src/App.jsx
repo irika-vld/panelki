@@ -5,15 +5,16 @@ import Home from "./components/pages/Home/home";
 import BuildingInfo from "./components/pages/BuildingInfo/buildingInfo";
 import CityInfo from "./components/pages/CityInfo/cityInfo";
 import React from "react";
+import Footer from "./components/Footer/footer";
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [infoAdded, setInfoAdded] = React.useState(false);
-  
+
   return (
     <BrowserRouter>
-      <div className="wrapper">
-        <Header isOpen={isOpen} />
+      <main className="wrapper">
+        <Header isOpen={isOpen}/>
         <Routes>
           <Route
             path="/"
@@ -32,7 +33,8 @@ function App() {
           />
           <Route path="/city/:id" element={<CityInfo />} />
         </Routes>
-      </div>
+        <Footer />
+      </main>
     </BrowserRouter>
   );
 }

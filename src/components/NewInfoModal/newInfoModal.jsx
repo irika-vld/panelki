@@ -10,8 +10,6 @@ const NewInfoModal = ({ setInfoAdded }) => {
           className={s.img}
           src="https://cdn.icon-icons.com/icons2/2854/PNG/512/list_check_checklist_checkmark_icon_181579.png"
           alt="галочка"
-          width={30}
-          height={30}
         />
       </div>
       <p className={s.info}>
