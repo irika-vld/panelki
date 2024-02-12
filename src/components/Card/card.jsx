@@ -1,10 +1,11 @@
-import React from "react";
+import React, { memo } from "react";
 import s from "./card.module.css";
 import { Link } from "react-router-dom";
 
-const Card = ({ title, img, id }) => {
-
-  const mainPhoto = img.filter((el) => el.tag === "main").map((el) => el.img)[0];
+const Card = memo(({ title, img, id }) => {
+  const mainPhoto = img
+    .filter((el) => el.tag === "main")
+    .map((el) => el.img)[0];
 
   return (
     <Link to={`/info/${title}/${id}`} style={{ textDecoration: "none" }}>
@@ -14,6 +15,6 @@ const Card = ({ title, img, id }) => {
       </div>
     </Link>
   );
-};
+});
 
 export default Card;

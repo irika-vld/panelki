@@ -14,6 +14,7 @@ const Home = ({ infoAdded, setInfoAdded }) => {
   const [filtersIsOpen, setFilterIsOpen] = React.useState(false);
   const [material, setMaterial] = React.useState("");
   const [isSuggested, setIsSuggested] = React.useState(false);
+  
   const sentButtonHandler = () => {
     setIsSuggested(false);
     setInfoAdded(true);
@@ -25,11 +26,18 @@ const Home = ({ infoAdded, setInfoAdded }) => {
   );
 
   const [isLoading, setIsLoading] = React.useState(true);
+  const [strip, setStrip] = React.useState(true);
 
   React.useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
+  }, []);
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setStrip(false);
+    }, 5000);
   }, []);
 
   return (
@@ -43,12 +51,12 @@ const Home = ({ infoAdded, setInfoAdded }) => {
         <div className={s.title_block}>
           <h1 className={s.title}>Определи свое место для жизни</h1>
         </div>
-        <div className={s.white_strip}></div>
+        <div className={strip ? s.white_strip : s.strip_none}></div>
       </div>
       <div className={s.content}>
-        <div className={s.filters} onClick={() => setFilterIsOpen(true)}>
+        <button className={s.filters} onClick={() => setFilterIsOpen(true)}>
           <p className={s.filters_text}>Фильтры</p>
-        </div>
+        </button>
         <div>
           <h2 className={s.title_slider}>Распространенные серии домов</h2>
           <Slider />

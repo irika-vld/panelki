@@ -21,8 +21,8 @@ h2 {
 
 .img {
   position: absolute;
-  right: 65px;
-  top: 55px;
+  right: 18%;
+  top: 30%;
   width: 30px;
   height: 30px;
 }
@@ -49,28 +49,20 @@ h2 {
   border: var(--border-btn-active);
 }
 
+@media (max-width: 1380px) {
+  .img {
+    right: 11%;
+    top: 25%;
+  }
+}
+
 @media (max-width: 1240px) {
   .img {
-    right: 45px;
+    right: 5%;
   }
 }
 
-@media (max-width: 1120px) {
-  .img {
-    right: 25px;
-  }
-}
-
-@media (max-width: 1015px) {
-  .img {
-    right: 15px;
-  }
-  h2 {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 819px) {
+@media (max-width: 1005px) {
   .img {
     top: 15px;
     left: 0;

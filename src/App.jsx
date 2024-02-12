@@ -14,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <main className="wrapper">
-        <Header isOpen={isOpen}/>
+        <Header isOpen={isOpen} />
         <Routes>
           <Route
             path="/"

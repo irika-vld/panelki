@@ -94,6 +94,27 @@ h2 {
   padding: 10px;
 }
 
+.name_rating {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+
+  p {
+    margin: 5px;
+  }
+}
+
+.input {
+  padding: 5px;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.input:focus {
+  outline: 2px solid var(--color-details);
+}
+
 .review_description {
   max-width: 900px;
   min-width: 300px;
@@ -114,6 +135,8 @@ h2 {
   padding: 10px;
   box-sizing: border-box;
   resize: none;
+  border-radius: var(--border-radius);
+  border: none;
 }
 
 .review_feild:focus {
@@ -136,6 +159,12 @@ h2 {
 
 .btn:active {
   border: var(--border-btn-active);
+}
+
+@media (max-width: 983px) {
+.btn {
+  padding: 5px 10px;
+}
 }
 
 @media (max-width: 780px) {

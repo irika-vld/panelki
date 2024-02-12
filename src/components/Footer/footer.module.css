@@ -10,7 +10,7 @@
 }
 
 .text {
-    background-color: hsla(0, 0%, 0%, 0.296);
+    background-color: var(--color-shadow-btn);
     color: var(--color-white);
     padding: 3px;
     margin: 0;

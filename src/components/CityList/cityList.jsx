@@ -1,9 +1,9 @@
-import React from "react";
+import React, { memo } from "react";
 import { cities } from "../../assets/data";
 import s from "./cityList.module.css";
 import { Link } from "react-router-dom";
 
-const CityList = () => {
+const CityList = memo(() => {
   const sortedCities = cities.sort((a, b) => (a.name > b.name ? 1 : -1));
 
   return (
@@ -21,6 +21,6 @@ const CityList = () => {
       </ul>
     </div>
   );
-};
+});
 
 export default CityList;
