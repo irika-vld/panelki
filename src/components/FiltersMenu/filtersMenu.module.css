@@ -17,6 +17,7 @@
   animation: slidein 0.5s ease-in-out forwards;
   animation-iteration-count: 1;
   border-radius: var(--border-radius);
+  z-index: 100;
 }
 
 .title {

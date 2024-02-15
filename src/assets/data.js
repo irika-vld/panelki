@@ -64,6 +64,7 @@ export const panelki = [
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "rare",
     material: "панельный",
+    inFavorites: false,
   },
 
   {
@@ -139,6 +140,7 @@ export const panelki = [
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "popular",
     material: "панельный",
+    inFavorites: false,
   },
   {
     id: 3,
@@ -181,6 +183,7 @@ export const panelki = [
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "rare",
     material: "панельный",
+    inFavorites: false,
   },
   {
     id: 4,
@@ -246,6 +249,7 @@ export const panelki = [
       "Типичный жилой дом серии II-49 представляет собой многосекционную крупнопанельную девятиэтажку. В столице имеются экспериментальные здания этой серии из 12 этажей, но они не получили массового распространения. Разработанный в конце 60-х годов, дом серии II-49 был призван сменить в Москве и других городах устаревшие хрущевки К-7.",
     type: "rare",
     material: "панельный",
+    inFavorites: false,
   },
   {
     id: 5,
@@ -318,6 +322,7 @@ export const panelki = [
       "В 1975 году дом серии П-44 появился в Москве в виде 16-этажного здания, но уже к 1979 году эти высотки строились с 17 этажами. Серия была признана удачной и получила широкое распространение в столице и Подмосковье, а также в ряде других городов. Её модификации возводятся и сейчас. Перепланировка квартиры в доме серии П-44 с целью оптимизации пространства и повышения комфортности жилья сегодня достаточно популярна. Дом серии П-44 характеризуется удачными планировочными решениями. Эти панельные высотки состоят из рядовых 4-квартирных и торцовых (угловых) 2-квартирных секций из 1, 2, 3 комнат.",
     type: "rare",
     material: "панельный",
+    inFavorites: false,
   },
   {
     id: 6,
@@ -376,6 +381,7 @@ export const panelki = [
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "rare",
     material: "блочный",
+    inFavorites: false,
   },
   {
     id: 7,
@@ -428,6 +434,7 @@ export const panelki = [
       "Дом серии ii-18 имеет ряд конструктивных особенностей, дающих простор для преобразований: большинство внутриквартирных стен – не несущие нагрузок; балконы в каждом жилище выше 3-го этажа; санузлы раздельные, кроме «однушек»; в большинстве «двушек» и во всех «трешках» присутствует смежность комнат. Недостатками планировки дома серии ii-18 традиционно называют тесные прихожие, сидячие ванны в однокомнатных квартирах и маленькие кухни в двухкомнатных.",
     type: "rare",
     material: "блочный",
+    inFavorites: false,
   },
   {
     id: 8,
@@ -499,6 +506,7 @@ export const panelki = [
       "Дом серии П-30 – это панельная многоэтажка, внешне легко узнаваемая по двум характерным признакам: балконам, «утопленным» в фасаде, и наличию лоджий на торце здания. В отличие от других «панелек», эта серия не стала массовой, хотя довольно активно возводилась с начала 70-х годов прошлого века по 2005 год. Дома серии П-30 можно встретить в спальных районах Москвы (Орехово-Борисово, Отрадное, Ивановское, Южное Тушино, Бибирево и др.), нескольких райцентрах Подмосковья, в Набережных Челнах, Тольятти, Вязьме и некоторых других городах",
     type: "rare",
     material: "панельный",
+    inFavorites: false,
   },
   {
     id: 9,
@@ -549,6 +557,7 @@ export const panelki = [
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "rare",
     material: "кирпичный",
+    inFavorites: false,
   },
   {
     id: 10,
@@ -635,6 +644,7 @@ export const panelki = [
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "popular",
     material: "панельный",
+    inFavorites: false,
   },
   {
     id: 11,
@@ -713,6 +723,7 @@ export const panelki = [
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "popular",
     material: "панельный",
+    inFavorites: false,
   },
   {
     id: 12,
@@ -787,6 +798,7 @@ export const panelki = [
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "popular",
     material: "кирпичный",
+    inFavorites: false,
   },
   {
     id: 13,
@@ -840,6 +852,7 @@ export const panelki = [
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "rare",
     material: "кирпичный",
+    inFavorites: false,
   },
   {
     id: 14,
@@ -898,6 +911,7 @@ export const panelki = [
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "popular",
     material: "кирпичный",
+    inFavorites: false,
   },
   {
     id: 15,
@@ -950,6 +964,7 @@ export const panelki = [
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "popular",
     material: "панельный",
+    inFavorites: false,
   },
   {
     id: 16,
@@ -999,6 +1014,7 @@ export const panelki = [
       "Fusce vel consectetur nunc, eget elementum leo. Donec non urna et urna imperdiet fermentum. Sed euismod enim nisl, ac mattis sem tempus ut. Morbi vel justo sapien. Donec purus ligula, consectetur at augue in, aliquet placerat leo. Sed nec libero ipsum. Sed convallis neque non lacinia accumsan. Curabitur ultricies imperdiet nisl a euismod.",
     type: "rare",
     material: "панельный",
+    inFavorites: false,
   },
 ];
 

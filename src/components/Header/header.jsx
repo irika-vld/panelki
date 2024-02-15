@@ -5,10 +5,7 @@ import { Link } from "react-router-dom";
 const Header = ({ isOpen }) => {
   return (
     <header className={s.header}>
-      <Link
-        to="/"
-        style={{ textDecoration: "none" }}
-      >
+      <Link to="/" style={{ textDecoration: "none" }}>
         <div className={isOpen ? s.logo_none : s.logo_block}>
           <img
             className={s.logo}
@@ -17,6 +14,9 @@ const Header = ({ isOpen }) => {
           />
           <h2 className={s.title}>панельки</h2>
         </div>
+      </Link>
+      <Link to="/favorites" style={{ textDecoration: "none", zIndex: "3" }}>
+        <button className={s.favorites}>Избранное</button>
       </Link>
     </header>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import { panelki } from "../../../assets/data";
 import { useParams } from "react-router-dom";
 import s from "./buildingInfo.module.css";
 import ModalPhoto from "../../ModalPhoto/modalPhoto";
@@ -7,9 +6,15 @@ import axios from "axios";
 import Review from "../../Review/review";
 import NewInfoModal from "../../NewInfoModal/newInfoModal";
 
-const BuildingInfo = ({ isOpen, setIsOpen, infoAdded, setInfoAdded }) => {
+const BuildingInfo = ({
+  isOpen,
+  setIsOpen,
+  infoAdded,
+  setInfoAdded,
+  buildingsList,
+}) => {
   const { title, id } = useParams();
-  const building = panelki.filter((el) => el.id === Number(id))[0];
+  const building = buildingsList.filter((el) => el.id === Number(id))[0];
 
   const [activePhoto, setActivePhoto] = React.useState("");
   const [reviews, setReviews] = React.useState([]);

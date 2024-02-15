@@ -107,13 +107,14 @@ p {
   background-color: var(--color-details);
   color: var(--color-white);
   position: fixed;
-  top: 40%;
+  top: 75%;
   border-radius: var(--border-radius);
   border: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 
 .filters_text {

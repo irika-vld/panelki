@@ -1,9 +1,8 @@
 import React from "react";
 import s from "./slider.module.css";
-import { panelki } from "../../assets/data";
 
-const Slider = () => {
-  const filtredBuildings = panelki
+const Slider = ({ buildingsList }) => {
+  const filtredBuildings = buildingsList
     .filter((el) => el.type === "popular")
     .map((el) => el.images);
   const images = filtredBuildings.map((el) => el.map((el) => el.img));

@@ -1,7 +1,6 @@
 import React from "react";
 import s from "./home.module.css";
 import City from "../../City/city";
-import { panelki } from "../../../assets/data";
 import Card from "../../Card/card";
 import Suggestion from "../../Suggestion/suggestion";
 import NewInfoModal from "../../NewInfoModal/newInfoModal";
@@ -9,19 +8,27 @@ import Slider from "../../Slider/slider";
 import Search from "../../Search/search";
 import Skeleton from "../../Skeleton/skeleton";
 import FiltersMenu from "../../FiltersMenu/filtersMenu";
+import NotFound from "../../NotFound/notFound";
 
-const Home = ({ infoAdded, setInfoAdded }) => {
+const Home = ({
+  infoAdded,
+  setInfoAdded,
+  addToFavorites,
+  removeFromFavorites,
+  buildingsList,
+}) => {
   const [filtersIsOpen, setFilterIsOpen] = React.useState(false);
   const [material, setMaterial] = React.useState("");
   const [isSuggested, setIsSuggested] = React.useState(false);
-  
+
   const sentButtonHandler = () => {
     setIsSuggested(false);
     setInfoAdded(true);
   };
 
   const [searchValue, setSearchValue] = React.useState("");
-  const filteredCard = panelki.filter((card) =>
+
+  const filteredCard = buildingsList.filter((card) =>
     card.name.toLowerCase().includes(searchValue.toLowerCase())
   );
 
@@ -32,9 +39,6 @@ const Home = ({ infoAdded, setInfoAdded }) => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
-  }, []);
-
-  React.useEffect(() => {
     setTimeout(() => {
       setStrip(false);
     }, 5000);
@@ -59,7 +63,7 @@ const Home = ({ infoAdded, setInfoAdded }) => {
         </button>
         <div>
           <h2 className={s.title_slider}>Распространенные серии домов</h2>
-          <Slider />
+          <Slider buildingsList={buildingsList} />
         </div>
         <div>
           <Search searchValue={searchValue} setSearchValue={setSearchValue} />
@@ -78,15 +82,27 @@ const Home = ({ infoAdded, setInfoAdded }) => {
           <City />
         </div>
         <div className={s.card_block}>
-          {filteredCard
-            .filter((el) => (material ? el.material === material : el))
-            .map((el) =>
-              isLoading ? (
-                <Skeleton key={el.id} />
-              ) : (
-                <Card key={el.id} id={el.id} title={el.name} img={el.images} />
+          {!filteredCard.length ? (
+            <NotFound />
+          ) : (
+            filteredCard
+              .filter((el) => (material ? el.material === material : el))
+              .map((el) =>
+                isLoading ? (
+                  <Skeleton key={el.id} />
+                ) : (
+                  <Card
+                    key={el.id}
+                    id={el.id}
+                    title={el.name}
+                    img={el.images}
+                    inFavorites={el.inFavorites}
+                    addToFavorites={addToFavorites}
+                    removeFromFavorites={removeFromFavorites}
+                  />
+                )
               )
-            )}
+          )}
         </div>
         <div className={s.suggestion_block}>
           <button className={s.btn} onClick={() => setIsSuggested(true)}>
