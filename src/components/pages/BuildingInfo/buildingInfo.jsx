@@ -1,5 +1,4 @@
 import React from "react";
-import { panelki } from "../../../assets/data";
 import { useParams } from "react-router-dom";
 import s from "./buildingInfo.module.css";
 import ModalPhoto from "../../ModalPhoto/modalPhoto";
@@ -7,13 +6,21 @@ import axios from "axios";
 import Review from "../../Review/review";
 import NewInfoModal from "../../NewInfoModal/newInfoModal";
 
-const BuildingInfo = ({ isOpen, setIsOpen, infoAdded, setInfoAdded }) => {
+const BuildingInfo = ({
+  isOpen,
+  setIsOpen,
+  infoAdded,
+  setInfoAdded,
+  buildingsList,
+}) => {
   const { title, id } = useParams();
-  const building = panelki.filter((el) => el.id === Number(id))[0];
+  const building = buildingsList.filter((el) => el.id === Number(id))[0];
 
   const [activePhoto, setActivePhoto] = React.useState("");
   const [reviews, setReviews] = React.useState([]);
   const [value, setValue] = React.useState("");
+  const [name, setName] = React.useState("");
+  const [rating, setRating] = React.useState(5);
 
   const clickPhotoHandler = (src) => {
     setIsOpen(true);
@@ -34,6 +41,33 @@ const BuildingInfo = ({ isOpen, setIsOpen, infoAdded, setInfoAdded }) => {
   }, [isOpen]);
 
   const review = reviews[0];
+
+  const clickSentBtn = (obj) => {
+    if (obj.review.length !== 0) {
+      const userReview = {
+        body: obj.review,
+        id: new Date(),
+        title: obj.name,
+        userId: new Date(),
+        rating: obj.rating,
+        name: obj.name,
+      };
+      setInfoAdded(true);
+      review.push(userReview);
+    }
+  };
+
+  const correctRating = (number) => {
+    if (0 < number && number < 6) {
+      return number;
+    }
+  };
+
+  const reviewFromUser = {
+    name: name,
+    rating: correctRating(rating),
+    review: value,
+  };
 
   return (
     <>
@@ -58,7 +92,7 @@ const BuildingInfo = ({ isOpen, setIsOpen, infoAdded, setInfoAdded }) => {
             />
           ))}
       </div>
-      <div className={s.wrapper}>
+      <main className={s.wrapper}>
         <div className={s.info_block}>
           <div className={s.technic}>
             <h2>Технические характеристики</h2>
@@ -96,28 +130,64 @@ const BuildingInfo = ({ isOpen, setIsOpen, infoAdded, setInfoAdded }) => {
           <div className={s.review_description}>
             <ul className={s.review_list}>
               {review?.map((el) => (
-                <Review key={el.id} item={el.body} />
+                <Review
+                  key={el.id}
+                  item={el.body}
+                  name={el.name}
+                  rating={el.rating}
+                />
               ))}
             </ul>
           </div>
           <div className={s.write_review}>
             <p>Напишите свой отзыв об этом доме</p>
-            <textarea
-              className={s.review_feild}
-              value={value}
-              onChange={(e) => setValue(e.target.value)}
-              name="textarea"
-              rows="8"
-              cols="70"
-              placeholder="Напишите отзыв и укажите ваш e-mail на случай необходимости уточнений"
-            />
-            <button className={s.btn} onClick={() => setInfoAdded(true)}>
+            <div>
+              <div className={s.name_rating}>
+                <div>
+                  <p>Ваше имя:</p>
+                  <input
+                    className={s.input}
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <p>Оценка (от 1 до 5):</p>
+                  <input
+                    className={s.input}
+                    type="number"
+                    value={rating}
+                    onChange={(e) => setRating(e.target.value)}
+                    min={1}
+                    max={5}
+                  />
+                </div>
+              </div>
+              <textarea
+                className={s.review_feild}
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+                name="textarea"
+                rows="8"
+                cols="70"
+                placeholder="Напишите отзыв и укажите ваш e-mail на случай необходимости уточнений"
+              />
+            </div>
+            <button
+              className={s.btn}
+              onClick={() => clickSentBtn(reviewFromUser)}
+            >
               Отправить
             </button>
-            {infoAdded ? <NewInfoModal setInfoAdded={setInfoAdded} /> : ""}
+            {infoAdded ? (
+              <NewInfoModal setInfoAdded={setInfoAdded} infoAdded={infoAdded} />
+            ) : (
+              ""
+            )}
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 };

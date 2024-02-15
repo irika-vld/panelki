@@ -15,6 +15,9 @@ const Header = ({ isOpen }) => {
           <h2 className={s.title}>панельки</h2>
         </div>
       </Link>
+      <Link to="/favorites" style={{ textDecoration: "none", zIndex: "3" }}>
+        <button className={s.favorites}>Избранное</button>
+      </Link>
     </header>
   );
 };

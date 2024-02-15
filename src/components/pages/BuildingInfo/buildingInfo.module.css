@@ -2,20 +2,17 @@
   padding: 18px;
 }
 
-.wrapper .noScroll {
-  overflow: hidden;
-}
-
 h2 {
   margin: 30px;
   text-align: center;
+  color: var(--color-details);
 }
 
 .photo_block {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  background-color: hsla(0, 0%, 0%, 0.296);
+  background-color: var(--color-shadow-btn);
   margin: 0px;
   padding: 5px;
 }
@@ -97,6 +94,27 @@ h2 {
   padding: 10px;
 }
 
+.name_rating {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+
+  p {
+    margin: 5px;
+  }
+}
+
+.input {
+  padding: 5px;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.input:focus {
+  outline: 2px solid var(--color-details);
+}
+
 .review_description {
   max-width: 900px;
   min-width: 300px;
@@ -117,6 +135,8 @@ h2 {
   padding: 10px;
   box-sizing: border-box;
   resize: none;
+  border-radius: var(--border-radius);
+  border: none;
 }
 
 .review_feild:focus {
@@ -129,12 +149,22 @@ h2 {
   border-radius: var(--border-radius);
   border: none;
   cursor: pointer;
-  background-color: hsla(0, 0%, 0%, 0.296);
-  color: white;
+  background-color: var(--color-details);
+  color: var(--color-white);
 }
 
 .btn:hover {
-  background-color: var(--color-details);
+  background-color: var(--color-shadow-btn);
+}
+
+.btn:active {
+  border: var(--border-btn-active);
+}
+
+@media (max-width: 983px) {
+.btn {
+  padding: 5px 10px;
+}
 }
 
 @media (max-width: 780px) {

@@ -1,3 +1,8 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo_block {
   display: flex;
   padding: 10px;
@@ -23,4 +28,34 @@
   width: 80px;
   height: 80px;
   z-index: 3;
+}
+
+.favorites {
+  width: 100px;
+  height: 40px;
+  margin: 35px 35px 0 0; 
+  background-color: var(--color-details);
+  color: var(--color-white);
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+}
+
+.favorites:hover {
+  background-color: var(--color-shadow-btn);
+}
+
+.favorites:active {
+  border: var(--border-btn-active);
+}
+
+@media (max-width: 400px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .favorites {
+    margin: 0px;
+  }
 }

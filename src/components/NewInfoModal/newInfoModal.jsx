@@ -1,7 +1,7 @@
 import React from "react";
-import s from './newInfoModal.module.css'
+import s from "./newInfoModal.module.css";
 
-const NewInfoModal = ({ setInfoAdded }) => {
+const NewInfoModal = ({ setInfoAdded, infoAdded }) => {
   return (
     <div className={s.addInfo_block}>
       <div className={s.success}>
@@ -10,14 +10,12 @@ const NewInfoModal = ({ setInfoAdded }) => {
           className={s.img}
           src="https://cdn.icon-icons.com/icons2/2854/PNG/512/list_check_checklist_checkmark_icon_181579.png"
           alt="галочка"
-          width={30}
-          height={30}
         />
       </div>
       <p className={s.info}>
         Она будет опубликована в случае успешной проверки модератором
       </p>
-      <button className={s.close} onClick={() => setInfoAdded(false)}>
+      <button className={s.close} onClick={() => setInfoAdded(!infoAdded)}>
         X
       </button>
     </div>

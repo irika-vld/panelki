@@ -2,7 +2,7 @@
   width: 40vw;
   height: 30vh;
   background-color: hsla(0, 0%, 0%, 0.668);
-  color: white;
+  color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,10 @@ h2 {
 
 .img {
   position: absolute;
-  right: 65px;
+  right: 18%;
+  top: 30%;
+  width: 30px;
+  height: 30px;
 }
 
 .info {
@@ -37,6 +40,47 @@ h2 {
   height: 25px;
   background-color: var(--color-details);
   border-radius: var(--border-radius);
-  color: white;
+  border: none;
+  color: var(--color-white);
   cursor: pointer;
+}
+
+.close:active {
+  border: var(--border-btn-active);
+}
+
+@media (max-width: 1380px) {
+  .img {
+    right: 11%;
+    top: 25%;
+  }
+}
+
+@media (max-width: 1240px) {
+  .img {
+    right: 5%;
+  }
+}
+
+@media (max-width: 1005px) {
+  .img {
+    top: 15px;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 691px) {
+  .img {
+    display: none;
+  }
+}
+
+@media (max-width: 489px) {
+  .addInfo_block {
+    width: 60vw;
+    height: 40vh;
+    top: 35%;
+    left: 15%;
+  }
 }

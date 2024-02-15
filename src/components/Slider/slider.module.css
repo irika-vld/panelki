@@ -23,6 +23,8 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   border-radius: var(--border-radius);
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .img {
@@ -56,6 +58,12 @@
   transform: scale(1.25);
 }
 
-::-webkit-scrollbar {
+.slider::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 690px) {
+  .container {
+    display: none;
+  }
 }

@@ -7,8 +7,10 @@
 .title {
   font-size: 2rem;
   cursor: pointer;
+  color: var(--color-details);
+  transition: 0.3s;
 }
 
 .title:hover {
-  color: var(--color-details);
+  color: var(--color-white)
 }

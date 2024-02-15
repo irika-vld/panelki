@@ -1,13 +1,15 @@
-import React from "react";
+import React, { memo } from "react";
 import { cities } from "../../assets/data";
 import s from "./cityList.module.css";
 import { Link } from "react-router-dom";
 
-const CityList = () => {
+const CityList = memo(() => {
+  const sortedCities = cities.sort((a, b) => (a.name > b.name ? 1 : -1));
+
   return (
     <div className={s.container}>
       <ul className={s.list}>
-        {cities.map((el) => (
+        {sortedCities.map((el) => (
           <Link
             key={el.id}
             style={{ textDecoration: "none" }}
@@ -19,6 +21,6 @@ const CityList = () => {
       </ul>
     </div>
   );
-};
+});
 
 export default CityList;
