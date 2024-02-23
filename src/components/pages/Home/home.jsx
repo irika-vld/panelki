@@ -44,12 +44,25 @@ const Home = ({
     }, 5000);
   }, []);
 
+  const imgRef = React.useRef(null);
+  const [showBtnToTop, setshowBtnToTop] = React.useState(false);
+
+  const onScroll = () => {
+    window.scrollY > 200 ? setshowBtnToTop(true) : setshowBtnToTop(false);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  });
+
   return (
     <>
       <div className={s.first_block}>
         <img
+          ref={imgRef}
           className={s.img}
-          src="https://pro-dachnikov.com/uploads/posts/2021-10/1633861383_99-p-sovetskie-doma-foto-106.jpg"
+          src="https://idei.club/raznoe/uploads/posts/2023-05/thumbs/1684979598_idei-club-p-panelnie-doma-sssr-dizain-56.jpg"
           alt="панельки"
         />
         <div className={s.title_block}>
@@ -118,8 +131,20 @@ const Home = ({
         ) : (
           ""
         )}
+        <button
+          className={showBtnToTop ? s.toTop : s.toTopNone}
+          onClick={() => {
+            imgRef.current.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Наверх
+        </button>
       </div>
-      {infoAdded ? <NewInfoModal /> : ""}
+      {infoAdded ? (
+        <NewInfoModal setInfoAdded={setInfoAdded} infoAdded={infoAdded} />
+      ) : (
+        ""
+      )}
     </>
   );
 };

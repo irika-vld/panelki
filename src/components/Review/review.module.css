@@ -1,7 +1,9 @@
+.review {
+  margin-bottom: 10px;
+}
 .upper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
   font-size: 1.1rem;
   font-weight: 600;
 }

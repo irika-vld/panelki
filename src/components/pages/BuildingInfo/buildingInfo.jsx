@@ -21,19 +21,30 @@ const BuildingInfo = ({
   const [value, setValue] = React.useState("");
   const [name, setName] = React.useState("");
   const [rating, setRating] = React.useState(5);
+  const [isLoading, setIsLoading] = React.useState(false);
 
   const clickPhotoHandler = (src) => {
     setIsOpen(true);
     setActivePhoto(src);
   };
 
-  React.useEffect(() => {
-    axios
+  const getReviews = async () => {
+    await axios
       .get("https://jsonplaceholder.typicode.com/posts?_limit=4")
       .then((res) => {
         const data = res.data;
         setReviews([...reviews, data]);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("Ошибка при получении отзывов");
       });
+  };
+
+  React.useEffect(() => {
+    setIsLoading(true);
+    getReviews();
   }, []);
 
   React.useEffect(() => {
@@ -53,7 +64,9 @@ const BuildingInfo = ({
         name: obj.name,
       };
       setInfoAdded(true);
-      review.push(userReview);
+      setTimeout(() => {
+        review.push(userReview);
+      }, 3000);
     }
   };
 
@@ -127,18 +140,22 @@ const BuildingInfo = ({
         </div>
         <div className={s.review_block}>
           <h2>Отзывы жильцов</h2>
-          <div className={s.review_description}>
-            <ul className={s.review_list}>
-              {review?.map((el) => (
-                <Review
-                  key={el.id}
-                  item={el.body}
-                  name={el.name}
-                  rating={el.rating}
-                />
-              ))}
-            </ul>
-          </div>
+          {isLoading ? (
+            <p>Загрузка...</p>
+          ) : (
+            <div className={s.review_description}>
+              <ul className={s.review_list}>
+                {review?.map((el) => (
+                  <Review
+                    key={el.id}
+                    item={el.body}
+                    name={el.name}
+                    rating={el.rating}
+                  />
+                ))}
+              </ul>
+            </div>
+          )}
           <div className={s.write_review}>
             <p>Напишите свой отзыв об этом доме</p>
             <div>

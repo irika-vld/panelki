@@ -15,7 +15,7 @@ const Review = memo(({ item, name, rating }) => {
   };
 
   return (
-    <li>
+    <li className={s.review}>
       <div className={s.upper}>
         <p>{name ? name : randomName()}</p>
         <div className={s.rating}>

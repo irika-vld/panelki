@@ -14,21 +14,21 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   background-color: var(--color-shadow-btn);
   margin: 0px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .photo {
   width: 100%;
   height: 300px;
-  cursor: pointer;
+  cursor: zoom-in;
   object-fit: cover;
   border-radius: var(--border-radius);
 }
 
 .info_block {
   display: flex;
-  justify-content: space-between;
-  gap: 16px;
+  justify-content: center;
+  gap: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -71,7 +71,7 @@ h2 {
   width: 100%;
   height: 170px;
   object-fit: contain;
-  cursor: pointer;
+  cursor: zoom-in;
   border-radius: var(--border-radius);
 }
 

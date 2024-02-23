@@ -10,8 +10,8 @@ const Slider = ({ buildingsList }) => {
 
   const sliderRef = React.useRef(null);
 
-  const prevHandler = () => (sliderRef.current.scrollLeft -= 600);
-  const nextHandler = () => (sliderRef.current.scrollLeft += 600);
+  const prevHandler = () => (sliderRef.current.scrollLeft -= 750);
+  const nextHandler = () => (sliderRef.current.scrollLeft += 750);
 
   return (
     <div className={s.container}>

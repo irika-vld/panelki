@@ -52,10 +52,10 @@
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 480px) {
   @keyframes slidein {
     from {
-      top: 750px;
+      top: 760px;
     }
 
     to {
@@ -71,18 +71,6 @@
   }
 
   @keyframes slidein {
-    from {
-      top: 750px;
-    }
-
-    to {
-      top: 770px;
-    }
-  }
-}
-
-@media (max-width: 400px) {
-    @keyframes slidein {
     from {
       top: 800px;
     }
