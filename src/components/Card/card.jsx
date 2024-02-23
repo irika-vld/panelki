@@ -30,14 +30,12 @@ const Card = memo(
           className={inFavorites ? s.favorite : s.unFavorite}
           src={
             inFavorites
-              ? "https://cdn.icon-icons.com/icons2/894/PNG/512/Tick_Mark_Dark_icon-icons.com_69147.png"
-              : "https://cdn.icon-icons.com/icons2/243/PNG/128/heart-internet_26694.png"
+              ? "https://cdn.icon-icons.com/icons2/935/PNG/512/checkmark-outline_icon-icons.com_73300.png"
+              : "https://cdn.icon-icons.com/icons2/494/PNG/512/heart_icon-icons.com_48290.png"
           }
           alt={inFavorites ? "в избранном" : "добавить в избранное"}
           onClick={() =>
-            inFavorites
-              ? removeFromFavorites(id)
-              : addToFavorites(id)
+            inFavorites ? removeFromFavorites(id) : addToFavorites(id)
           }
         />
       </div>

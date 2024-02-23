@@ -2,6 +2,7 @@ import React from "react";
 import s from "./newInfoModal.module.css";
 
 const NewInfoModal = ({ setInfoAdded, infoAdded }) => {
+
   return (
     <div className={s.addInfo_block}>
       <div className={s.success}>

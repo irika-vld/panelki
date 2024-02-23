@@ -80,38 +80,25 @@
   border: var(--border-btn-active);
 }
 
-@media (max-width: 800px) {
-  @keyframes slidein {
-    from {
-      left: -100px;
-    }
-
-    to {
-      left: 30%;
-    }
-  }
-
+@media (max-width: 1024px) {
   .menu {
-    width: 40vw;
+    width: 30vw;
   }
 }
 
-@media (max-width: 366px) {
-  @keyframes slidein {
-    from {
-      left: -100px;
-    }
-
-    to {
-      left: 20%;
-    }
-  }
-
+@media (max-width: 650px) {
   .menu {
-    width: 60vw;
+    width: 45vw;
+    height: 70vh;
   }
 
   .btn_reset {
-    right: 5%;
+    bottom: 30%;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu {
+    width: 60vw;
   }
 }
