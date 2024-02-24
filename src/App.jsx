@@ -14,42 +14,37 @@ function App() {
   const [buildingsList, setBuildingsList] = React.useState(panelki);
   const [isOpen, setIsOpen] = React.useState(false);
   const [infoAdded, setInfoAdded] = React.useState(false);
-
   const [favoritesList, setFavoritesList] = useLocalStorage(
     [],
     "favoritesList"
   );
 
-  const addToFavorites = (cardId) => {
-    setBuildingsList((prev) => {
-      const cardInFav = prev.map((el) => {
-        if (el.id === cardId) {
-          el.inFavorites = true;
-        }
-        return el;
+  const favoritesHandler = React.useCallback(
+    (cardId, action = "add") => {
+      setBuildingsList((prev) => {
+        const cardInFav = prev.map((el) => {
+          if (el.id === cardId) {
+            el.inFavorites = action === "add" ? true : false;
+          }
+          return el;
+        });
+
+        return [...cardInFav];
       });
-
-      return [...cardInFav];
-    });
-    setFavoritesList([
-      ...favoritesList,
-      buildingsList.find((el) => el.id === cardId) || {},
-    ]);
-  };
-
-  const removeFromFavorites = (cardId) => {
-    setBuildingsList((prev) => {
-      const newArr = prev.map((el) => {
-        if (el.id === cardId) {
-          el.inFavorites = false;
-        }
-        return el;
-      });
-
-      return [...newArr];
-    });
-    setFavoritesList([...favoritesList.filter((el) => el.id !== cardId) || {}]);
-  };
+      if (action === "add") {
+        setFavoritesList([
+          ...favoritesList,
+          buildingsList.find((el) => el.id === cardId) || {},
+        ]);
+      }
+      if (action === "delete") {
+        setFavoritesList([
+          ...(favoritesList.filter((el) => el.id !== cardId) || {}),
+        ]);
+      }
+    },
+    [buildingsList, favoritesList]
+  );
 
   return (
     <BrowserRouter>
@@ -62,8 +57,7 @@ function App() {
               <Home
                 setInfoAdded={setInfoAdded}
                 infoAdded={infoAdded}
-                addToFavorites={addToFavorites}
-                removeFromFavorites={removeFromFavorites}
+                favoritesHandler={favoritesHandler}
                 buildingsList={buildingsList}
               />
             }
@@ -84,8 +78,7 @@ function App() {
             path="/city/:id"
             element={
               <CityInfo
-                addToFavorites={addToFavorites}
-                removeFromFavorites={removeFromFavorites}
+                favoritesHandler={favoritesHandler}
                 buildingsList={buildingsList}
               />
             }
@@ -95,8 +88,7 @@ function App() {
             element={
               <Favorites
                 favorites={favoritesList}
-                addToFavorites={addToFavorites}
-                removeFromFavorites={removeFromFavorites}
+                favoritesHandler={favoritesHandler}
                 buildingsList={buildingsList}
               />
             }

@@ -10,13 +10,7 @@ import Skeleton from "../../Skeleton/skeleton";
 import FiltersMenu from "../../FiltersMenu/filtersMenu";
 import NotFound from "../../NotFound/notFound";
 
-const Home = ({
-  infoAdded,
-  setInfoAdded,
-  addToFavorites,
-  removeFromFavorites,
-  buildingsList,
-}) => {
+const Home = ({ infoAdded, setInfoAdded, favoritesHandler, buildingsList }) => {
   const [filtersIsOpen, setFilterIsOpen] = React.useState(false);
   const [material, setMaterial] = React.useState("");
   const [isSuggested, setIsSuggested] = React.useState(false);
@@ -32,13 +26,10 @@ const Home = ({
     card.name.toLowerCase().includes(searchValue.toLowerCase())
   );
 
-  const [isLoading, setIsLoading] = React.useState(true);
+  const [isLoading, setIsLoading] = React.useState(false);
   const [strip, setStrip] = React.useState(true);
 
   React.useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
     setTimeout(() => {
       setStrip(false);
     }, 5000);
@@ -82,13 +73,11 @@ const Home = ({
           <Search searchValue={searchValue} setSearchValue={setSearchValue} />
         </div>
         <div>
-          {filtersIsOpen ? (
+          {filtersIsOpen && (
             <FiltersMenu
               setFilterIsOpen={setFilterIsOpen}
               setMaterial={setMaterial}
             />
-          ) : (
-            ""
           )}
         </div>
         <div className={s.city_block}>
@@ -110,8 +99,7 @@ const Home = ({
                     title={el.name}
                     img={el.images}
                     inFavorites={el.inFavorites}
-                    addToFavorites={addToFavorites}
-                    removeFromFavorites={removeFromFavorites}
+                    favoritesHandler={favoritesHandler}
                   />
                 )
               )
@@ -123,13 +111,11 @@ const Home = ({
           </button>
           <p>Нажмите, чтобы предложить информацию</p>
         </div>
-        {isSuggested ? (
+        {isSuggested && (
           <Suggestion
             setIsSuggested={setIsSuggested}
             sentButtonHandler={sentButtonHandler}
           />
-        ) : (
-          ""
         )}
         <button
           className={showBtnToTop ? s.toTop : s.toTopNone}
@@ -140,10 +126,8 @@ const Home = ({
           Наверх
         </button>
       </div>
-      {infoAdded ? (
+      {infoAdded && (
         <NewInfoModal setInfoAdded={setInfoAdded} infoAdded={infoAdded} />
-      ) : (
-        ""
       )}
     </>
   );

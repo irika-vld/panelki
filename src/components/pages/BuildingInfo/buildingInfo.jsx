@@ -15,7 +15,6 @@ const BuildingInfo = ({
 }) => {
   const { title, id } = useParams();
   const building = buildingsList.filter((el) => el.id === Number(id))[0];
-
   const [activePhoto, setActivePhoto] = React.useState("");
   const [reviews, setReviews] = React.useState([]);
   const [value, setValue] = React.useState("");
@@ -28,33 +27,30 @@ const BuildingInfo = ({
     setActivePhoto(src);
   };
 
-  const getReviews = async () => {
-    await axios
+  const getReviews = () => {
+    setIsLoading(true);
+    axios
       .get("https://jsonplaceholder.typicode.com/posts?_limit=4")
       .then((res) => {
         const data = res.data;
-        setReviews([...reviews, data]);
-        setIsLoading(false);
+        setReviews([...reviews, ...data]);
       })
       .catch((err) => {
-        console.log(err);
         alert("Ошибка при получении отзывов");
-      });
+      })
+      .finally(() => setIsLoading(false));
   };
 
   React.useEffect(() => {
-    setIsLoading(true);
     getReviews();
   }, []);
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
-  }, [isOpen]);
-
-  const review = reviews[0];
+  }, []);
 
   const clickSentBtn = (obj) => {
-    if (obj.review.length !== 0) {
+    if (obj.review.length) {
       const userReview = {
         body: obj.review,
         id: new Date(),
@@ -65,7 +61,7 @@ const BuildingInfo = ({
       };
       setInfoAdded(true);
       setTimeout(() => {
-        review.push(userReview);
+        setReviews([...reviews, userReview]);
       }, 3000);
     }
   };
@@ -145,7 +141,7 @@ const BuildingInfo = ({
           ) : (
             <div className={s.review_description}>
               <ul className={s.review_list}>
-                {review?.map((el) => (
+                {reviews.map((el) => (
                   <Review
                     key={el.id}
                     item={el.body}
@@ -197,10 +193,8 @@ const BuildingInfo = ({
             >
               Отправить
             </button>
-            {infoAdded ? (
+            {infoAdded && (
               <NewInfoModal setInfoAdded={setInfoAdded} infoAdded={infoAdded} />
-            ) : (
-              ""
             )}
           </div>
         </div>

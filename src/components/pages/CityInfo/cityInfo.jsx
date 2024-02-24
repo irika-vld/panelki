@@ -4,13 +4,9 @@ import { cities } from "../../../assets/data";
 import s from "./cityInfo.module.css";
 import Card from "../../Card/card";
 
-const CityInfo = ({
-  addToFavorites,
-  removeFromFavorites,
-  buildingsList,
-}) => {
+const CityInfo = ({ favoritesHandler, buildingsList }) => {
   const { id } = useParams();
-  const city = cities.filter((el) => el.id === id)[0];
+  const city = cities.find((el) => el.id === id);
   const filtredPanelki = buildingsList.filter((el) =>
     el.cities.includes(city.name)
   );
@@ -38,8 +34,7 @@ const CityInfo = ({
               title={el.name}
               img={el.images}
               inFavorites={el.inFavorites}
-              addToFavorites={addToFavorites}
-              removeFromFavorites={removeFromFavorites}
+              favoritesHandler={favoritesHandler}
             />
           ))}
         </div>

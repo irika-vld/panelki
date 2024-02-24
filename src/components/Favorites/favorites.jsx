@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../Card/card";
 import s from "./favorites.module.css";
 
-const Favorites = ({ favorites = [], addToFavorites, removeFromFavorites }) => {
+const Favorites = ({ favorites = [], favoritesHandler }) => {
   return (
     <div className={s.favorites_block}>
       <h2>Favorites</h2>
@@ -17,8 +17,7 @@ const Favorites = ({ favorites = [], addToFavorites, removeFromFavorites }) => {
               title={el.name}
               img={el.images}
               inFavorites={el.inFavorites}
-              addToFavorites={addToFavorites}
-              removeFromFavorites={removeFromFavorites}
+              favoritesHandler={favoritesHandler}
             />
           ))
         )}
