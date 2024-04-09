@@ -43,7 +43,7 @@ function App() {
         ]);
       }
     },
-    [buildingsList, favoritesList]
+    [buildingsList, favoritesList, setFavoritesList]
   );
 
   return (

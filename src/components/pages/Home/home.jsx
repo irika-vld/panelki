@@ -26,13 +26,17 @@ const Home = ({ infoAdded, setInfoAdded, favoritesHandler, buildingsList }) => {
     card.name.toLowerCase().includes(searchValue.toLowerCase())
   );
 
-  const [isLoading, setIsLoading] = React.useState(false);
+  const [isLoading, setIsLoading] = React.useState(true);
   const [strip, setStrip] = React.useState(true);
 
   React.useEffect(() => {
     setTimeout(() => {
       setStrip(false);
     }, 5000);
+  }, []);
+
+  React.useEffect(() => {
+    setTimeout(() => setIsLoading(false), 1000);
   }, []);
 
   const imgRef = React.useRef(null);
