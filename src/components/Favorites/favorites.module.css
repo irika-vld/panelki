@@ -1,5 +1,6 @@
 .favorites_block {
-  /* height: 100vh; */
+  min-height: 71vh;
+  height: 100%;
 }
 
 .cards {
@@ -8,6 +9,7 @@
   gap: 20px;
   padding-top: 20px;
   margin: 20px;
+  height: 100%;
 }
 
 .noFavorites {
